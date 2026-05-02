@@ -14,14 +14,14 @@ const closeButton = document.querySelector('.lightbox-close');
 const dressData = {
     1: {
         image: 'images/dress-01.jpg',
-        alt: 'Elegant evening gown with flowing silhouette',
+        alt: '',
         title: 'Fear into Freedom',
         meta: '2023 • Neoprene & Wool',
         description: 'A wearable manifesto against fear, designed for all who dare to fight for freedom. '
     },
     2: {
         image: 'images/dress-02.jpg',
-        alt: 'Modern cocktail dress with asymmetric design',
+        alt: '',
         title: 'Aurora Dreams',
         meta: '2025 • Chiffon & Lace',
         description: 'A contemporary cocktail dress with an asymmetric neckline and delicate lace accents that create movement. This design explores the balance between structure and fluidity, making it ideal for evening events. The lightweight fabric and thoughtful construction ensure both comfort and style.'
