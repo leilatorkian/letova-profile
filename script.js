@@ -15,9 +15,9 @@ const dressData = {
     1: {
         image: 'images/dress-01.jpg',
         alt: 'Elegant evening gown with flowing silhouette',
-        title: 'Midnight Elegance',
-        meta: '2026 • Silk & Velvet',
-        description: 'A stunning evening gown featuring a flowing silhouette with intricate detailing and luxurious silk fabric. This piece embodies timeless elegance with modern construction techniques, perfect for formal occasions. The deep color and rich textures create a dramatic yet sophisticated statement.'
+        title: 'Fear into Freedom',
+        meta: '2023 • Neoprene & Wool',
+        description: 'A wearable manifesto against fear, designed for all who dare to fight for freedom. '
     },
     2: {
         image: 'images/dress-02.jpg',
