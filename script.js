@@ -36,9 +36,9 @@ const dressData = {
     4: {
         image: 'images/dress-04.jpg',
         alt: 'Structured midi dress with architectural details',
-        title: 'Urban Sophistication',
-        meta: '2025 • Structured Cotton & Linen',
-        description: 'A modern midi dress featuring architectural lines and clean tailoring perfect for contemporary elegance. Inspired by urban architecture, this piece combines functionality with high fashion. The structured silhouette and natural fibers make it versatile for various occasions, from business to evening wear.'
+        title: 'Worn With Love',
+        meta: '2020 • Recycled cotton & linen',
+        description: 'Upcycling is more than sustainability — it is a philosophy, an emotion, and a way of staying close to the people we love. This collection transforms old, worn garments into something new and modern, beginning with a mother's trenchcoat remade into a fresh silhouette with the same spirit of love and attachment at its core. Two separable pieces, joined by buttons, crafted from reclaimed materials into something made to last.'
     }
 };
 
