@@ -22,8 +22,8 @@ const dressData = {
     2: {
         image: 'images/dress-02.jpg',
         alt: '',
-        title: 'Aurora Dreams',
-        meta: '2025 • Chiffon & Lace',
+        title: 'ABetween Worlds',
+        meta: '2022 • Cashmere & Silk',
         description: 'A contemporary cocktail dress with an asymmetric neckline and delicate lace accents that create movement. This design explores the balance between structure and fluidity, making it ideal for evening events. The lightweight fabric and thoughtful construction ensure both comfort and style.'
     },
     3: {
