@@ -9,27 +9,32 @@
 }
 
 :root {
+    /* Color Palette */
     --color-background: #FAFAFA;
     --color-text-primary: #1A1A1A;
     --color-text-secondary: #666666;
     --color-accent: #8B7355;
     --color-white: #FFFFFF;
     --color-overlay: rgba(0, 0, 0, 0.6);
-
+    
+    /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-
+    
+    /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-xxl: 4rem;
-
+    
+    /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
     --transition-slow: 0.5s ease;
-
+    
+    /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -49,15 +54,27 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* ===========================
+   Typography
+   =========================== */
+
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 600;
     line-height: 1.2;
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
 
 p {
     font-size: 1rem;
@@ -79,9 +96,13 @@ p {
     z-index: 100;
 }
 
-.skip-link:focus { top: 0; }
+.skip-link:focus {
+    top: 0;
+}
 
-a:focus, button:focus {
+/* Focus styles */
+a:focus,
+button:focus {
     outline: 3px solid var(--color-accent);
     outline-offset: 2px;
 }
@@ -227,118 +248,42 @@ a:focus, button:focus {
 }
 
 /* ===========================
-   Collection Sections
+   Collections Grid (Main Page)
    =========================== */
 
-.collection {
-    margin-bottom: var(--spacing-xxl);
-}
-
-.collection-header {
-    margin-bottom: var(--spacing-xl);
-    max-width: 760px;
-}
-
-.collection-meta-bar {
-    display: flex;
-    align-items: baseline;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-sm);
-}
-
-.collection-number {
-    font-family: var(--font-heading);
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    opacity: 0.25;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
-.collection-year {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--color-text-secondary);
-}
-
-.collection-title {
-    font-family: var(--font-heading);
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 700;
-    color: var(--color-text-primary);
-    margin-bottom: var(--spacing-xs);
-    line-height: 1.15;
-}
-
-.collection-tags {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-md);
-}
-
-.collection-description {
-    color: var(--color-text-secondary);
-    font-size: 0.975rem;
-    line-height: 1.85;
-    font-weight: 300;
-}
-
-.collection-divider {
-    border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    margin: var(--spacing-xxl) 0;
-}
-
-/* ===========================
-   Gallery Grid
-   =========================== */
-
-.gallery {
+.collections-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-xxl);
+    justify-items: center;
 }
 
-/* ===========================
-   Dress Cards
-   =========================== */
-
-.dress-card {
+/* Collection Card */
+.collection-card {
     background: var(--color-background);
     border-radius: 8px;
     overflow: hidden;
     transition: transform var(--transition-medium), box-shadow var(--transition-medium);
-    animation: fadeInUp var(--transition-slow) ease both;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.dress-card:nth-child(1) { animation-delay: 0.1s; }
-.dress-card:nth-child(2) { animation-delay: 0.2s; }
-.dress-card:nth-child(3) { animation-delay: 0.3s; }
-.dress-card:nth-child(4) { animation-delay: 0.4s; }
-.dress-card:nth-child(5) { animation-delay: 0.5s; }
-.dress-card:nth-child(6) { animation-delay: 0.6s; }
-
-.dress-card:hover {
-    transform: translateY(-8px);
+.collection-card:hover {
+    transform: translateY(-8px) scale(1.02);
     box-shadow: var(--shadow-lg);
 }
 
-.dress-image-wrapper {
+.collection-card-image-wrapper {
     position: relative;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 3 / 4;  /* Portrait aspect ratio for fashion photos */
     overflow: hidden;
     background: var(--color-text-secondary);
-    cursor: pointer;
 }
 
-.dress-image {
+.collection-card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -346,11 +291,11 @@ a:focus, button:focus {
     transition: transform var(--transition-slow);
 }
 
-.dress-card:hover .dress-image {
+.collection-card:hover .collection-card-image {
     transform: scale(1.05);
 }
 
-.dress-overlay {
+.collection-card-overlay {
     position: absolute;
     inset: 0;
     background: var(--color-overlay);
@@ -361,11 +306,11 @@ a:focus, button:focus {
     transition: opacity var(--transition-medium);
 }
 
-.dress-card:hover .dress-overlay {
+.collection-card:hover .collection-card-overlay {
     opacity: 1;
 }
 
-.view-details-btn {
+.collection-view-btn {
     background: var(--color-white);
     color: var(--color-text-primary);
     border: none;
@@ -380,38 +325,278 @@ a:focus, button:focus {
     transition: all var(--transition-fast);
 }
 
-.view-details-btn:hover,
-.view-details-btn:focus {
+.collection-view-btn:hover,
+.collection-view-btn:focus {
     background: var(--color-accent);
     color: var(--color-white);
     transform: scale(1.05);
 }
 
-.dress-info {
+.collection-card-info {
     padding: var(--spacing-lg);
+    text-align: left;
 }
 
-.dress-title,
-h4.dress-title {
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: var(--spacing-xs);
-    color: var(--color-text-primary);
-    line-height: 1.3;
-}
-
-.dress-meta {
+.collection-card-meta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
     font-size: 0.85rem;
     color: var(--color-accent);
-    margin-bottom: var(--spacing-sm);
     font-weight: 500;
 }
 
-.dress-description {
+.collection-card-title {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-primary);
+}
+
+.collection-card-tags {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.collection-card-description {
     color: var(--color-text-secondary);
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+/* ===========================
+   Collection Modal
+   =========================== */
+
+.collection-modal {
+    border: none;
+    padding: 0;
+    max-width: 95vw;
+    max-height: 95vh;
+    width: 1200px;
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.collection-modal::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+.collection-modal-content {
+    position: relative;
+    max-height: 95vh;
+    overflow-y: auto;
+    padding: var(--spacing-xl);
+}
+
+.collection-modal-close {
+    position: sticky;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    float: right;
+    background: var(--color-white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.collection-modal-close:hover,
+.collection-modal-close:focus {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: rotate(90deg);
+}
+
+.collection-modal-header {
+    margin-bottom: var(--spacing-xl);
+    clear: both;
+    text-align: left;
+}
+
+.collection-modal-title {
+    margin-bottom: var(--spacing-sm);
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.collection-modal-tags {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.collection-modal-description {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+/* Gallery inside modal */
+.collection-modal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    justify-items: center;
+}
+
+.modal-outfit-card {
+    background: var(--color-background);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.modal-outfit-card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.modal-outfit-image-wrapper {
+    position: relative;
+    aspect-ratio: 3 / 4;  /* Portrait aspect ratio */
+    overflow: hidden;
+    background: var(--color-text-secondary);
+}
+
+.modal-outfit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modal-outfit-info {
+    padding: var(--spacing-md);
+    text-align: left;
+}
+
+.modal-outfit-title {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--font-heading);
+}
+
+.modal-outfit-meta {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.modal-outfit-description {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* ===========================
+   Outfit Detail Modal
+   =========================== */
+
+.outfit-modal {
+    border: none;
+    padding: 0;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+}
+
+.outfit-modal::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+.outfit-modal-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-height: 90vh;
+}
+
+.outfit-modal-close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: var(--color-white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.outfit-modal-close:hover,
+.outfit-modal-close:focus {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: rotate(90deg);
+}
+
+.outfit-modal-image-container {
+    background: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.outfit-modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.outfit-modal-info {
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.outfit-modal-title {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.75rem;
+}
+
+.outfit-modal-meta {
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+}
+
+.outfit-modal-description {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
 /* ===========================
@@ -472,182 +657,158 @@ h4.dress-title {
 }
 
 /* ===========================
-   Lightbox Modal
-   =========================== */
-
-.lightbox {
-    border: none;
-    padding: 0;
-    max-width: 90vw;
-    max-height: 90vh;
-    background: var(--color-white);
-    border-radius: 8px;
-    box-shadow: var(--shadow-lg);
-}
-
-.lightbox::backdrop {
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(4px);
-}
-
-.lightbox-content {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    max-height: 90vh;
-}
-
-.lightbox-close {
-    position: absolute;
-    top: var(--spacing-sm);
-    right: var(--spacing-sm);
-    background: var(--color-white);
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    transition: all var(--transition-fast);
-    box-shadow: var(--shadow-sm);
-}
-
-.lightbox-close:hover,
-.lightbox-close:focus {
-    background: var(--color-accent);
-    color: var(--color-white);
-    transform: rotate(90deg);
-}
-
-.lightbox-image-container {
-    background: var(--color-text-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.lightbox-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.lightbox-info {
-    padding: var(--spacing-xl);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-y: auto;
-}
-
-.lightbox-title {
-    margin-bottom: var(--spacing-sm);
-}
-
-.lightbox-meta {
-    color: var(--color-accent);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: var(--spacing-md);
-}
-
-.lightbox-description {
-    color: var(--color-text-secondary);
-    line-height: 1.8;
-}
-
-/* ===========================
-   Animations
-   =========================== */
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===========================
    Responsive Design
    =========================== */
 
+/* Tablet */
 @media (max-width: 1024px) {
     :root {
         --spacing-xl: 2.5rem;
         --spacing-xxl: 3rem;
     }
-
-    .intro-content { padding: var(--spacing-xl); }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: var(--spacing-lg);
+    
+    .intro-content {
+        padding: var(--spacing-xl);
     }
-
-    .lightbox-content { grid-template-columns: 1fr; }
-    .lightbox-image-container { max-height: 50vh; }
-
-    .collection-number { font-size: 2.75rem; }
+    
+    .collections-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: var(--spacing-lg);
+        justify-items: center;
+    }
+    
+    .collection-modal-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        justify-items: center;
+    }
+    
+    .outfit-modal-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .outfit-modal-image-container {
+        max-height: 50vh;
+    }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
     :root {
         --spacing-lg: 1.5rem;
         --spacing-xl: 2rem;
         --spacing-xxl: 2.5rem;
     }
-
-    .header { padding: var(--spacing-sm) var(--spacing-md); }
-    .nav-list { gap: var(--spacing-md); }
-    .nav-link { font-size: 0.8rem; }
-
+    
+    .header {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .nav-list {
+        gap: var(--spacing-md);
+    }
+    
+    .nav-link {
+        font-size: 0.8rem;
+    }
+    
     .intro-section {
         grid-template-columns: 1fr;
         margin-top: 60px;
     }
-
-    .intro-image-container { min-height: 50vh; }
-    .intro-content { padding: var(--spacing-lg); }
-
-    .portfolio-section { padding: var(--spacing-xl) var(--spacing-md); }
-
-    .gallery {
+    
+    .intro-image-container {
+        min-height: 50vh;
+    }
+    
+    .intro-content {
+        padding: var(--spacing-lg);
+    }
+    
+    .portfolio-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    .collections-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
+        justify-items: center;
     }
-
-    .contact-section { padding: var(--spacing-xl) var(--spacing-md); }
-
-    .lightbox { max-width: 95vw; max-height: 95vh; }
-    .lightbox-content { grid-template-columns: 1fr; }
-    .lightbox-image-container { max-height: 40vh; }
-    .lightbox-info { padding: var(--spacing-lg); }
-
-    .collection-number { font-size: 2.5rem; }
-    .collection-title { font-size: 1.6rem; }
+    
+    .contact-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    .collection-modal {
+        max-width: 100vw;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+    
+    .collection-modal-content {
+        padding: var(--spacing-lg);
+    }
+    
+    .collection-modal-gallery {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .outfit-modal-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .outfit-modal-image-container {
+        max-height: 50vh;
+    }
+    
+    .outfit-modal-info {
+        padding: var(--spacing-lg);
+    }
+    
+    .outfit-modal {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
-    .nav-list { gap: var(--spacing-sm); }
-    .nav-link { font-size: 0.75rem; letter-spacing: 1px; }
-    .intro-content { padding: var(--spacing-md); }
-    .dress-info { padding: var(--spacing-md); }
+    .nav-list {
+        gap: var(--spacing-sm);
+    }
+    
+    .nav-link {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+    
+    .intro-content {
+        padding: var(--spacing-md);
+    }
+    
+    .collection-card-info,
+    .modal-outfit-info {
+        padding: var(--spacing-md);
+    }
+    
+    .outfit-modal-info {
+        padding: var(--spacing-md);
+    }
+    
+    .outfit-modal-image-container {
+        max-height: 40vh;
+    }
 }
 
+/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-    html { scroll-behavior: auto; }
+    
+    html {
+        scroll-behavior: auto;
+    }
 }

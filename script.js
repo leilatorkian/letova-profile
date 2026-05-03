@@ -1,199 +1,329 @@
 // ===========================
-// Lightbox Modal Functionality
+// Collection Data
 // ===========================
 
-const lightbox = document.getElementById('lightbox-modal');
-const lightboxImage = document.getElementById('lightbox-image');
-const lightboxTitle = document.getElementById('modal-title');
-const lightboxMeta = document.getElementById('modal-meta');
-const lightboxDescription = document.getElementById('modal-description');
-const closeButton = document.querySelector('.lightbox-close');
-
-// ===========================
-// Dress Data – all collections
-// ===========================
-
-const dressData = {
-    // ── Collection 1: Fear Into Freedom ──
-    'fear-1': {
-        image: 'images/dress-01.jpg',
-        alt: 'Outfit 1 – Fear Into Freedom, 2023',
-        title: 'Fear Into Freedom — Outfit 1',
-        meta: '2023  ·  Neoprene & Wool',
-        description: 'Structured neoprene silhouette with wool detail. A wearable manifesto against fear, designed for all who dare to fight for freedom. The grey tones reflect tiredness and anger; the neoprene holds its shape against pressure.'
+const collectionsData = {
+    fear: {
+        title: 'Fear Into Freedom',
+        tags: 'Genderless · Womenswear',
+        description: 'A wearable manifesto against fear. The feeling of fear opposes freedom — the greater the fear, the further one is from personal liberty. Inspired by the Iranian people\'s courage in fighting for their rights, this collection visualizes fear and translates it into textile. The color palette — pink, green, and grey — speaks to protest, hope, and exhaustion. Both feminine and unisex, the collection dismantles false gender stereotypes as it dismantles fear itself.',
+        outfits: [
+            {
+                image: 'images/dress-01.jpg',
+                alt: 'Outfit 1 – Fear Into Freedom, 2023',
+                title: 'Outfit 1',
+                meta: 'Neoprene & Wool',
+                description: 'Structured neoprene silhouette with wool detail — designed for those who dare to fight for freedom.'
+            },
+            {
+                image: 'images/fear-outfit2.jpg',
+                alt: 'Outfit 2 – Fear Into Freedom, 2023',
+                title: 'Outfit 2',
+                meta: 'Rib Jersey & Air Mesh',
+                description: 'Layered jersey and mesh construction evoking movement and vulnerability, set against a grey ground.'
+            },
+            {
+                image: 'images/fear-outfit3.jpg',
+                alt: 'Outfit 3 – Fear Into Freedom, 2023',
+                title: 'Outfit 3',
+                meta: 'Reflective Fabric & Felt',
+                description: 'Reflective surfaces confront the viewer — a mirror of society\'s gaze turned back on itself.'
+            },
+            {
+                image: 'images/fear-outfit4.jpg',
+                alt: 'Outfit 4 – Fear Into Freedom, 2023',
+                title: 'Outfit 4',
+                meta: 'Faux Fur & Wool',
+                description: 'Softness as defiance — faux fur textures merge with structured wool to challenge what tenderness means.'
+            },
+            {
+                image: 'images/fear-outfit5.jpg',
+                alt: 'Outfit 5 – Fear Into Freedom, 2023',
+                title: 'Outfit 5',
+                meta: 'Neoprene & Rib Jersey',
+                description: 'Pink as protest: historically a color of resistance, recast here in clean neoprene lines.'
+            },
+            {
+                image: 'images/fear-outfit6.jpg',
+                alt: 'Outfit 6 – Fear Into Freedom, 2023',
+                title: 'Outfit 6',
+                meta: 'Wool & Air Mesh',
+                description: 'The closing piece — green for hope, grey for struggle, worn together as one.'
+            }
+        ]
     },
-    'fear-2': {
-        image: 'images/fear-outfit2.jpg',
-        alt: 'Outfit 2 – Fear Into Freedom, 2023',
-        title: 'Fear Into Freedom — Outfit 2',
-        meta: '2023  ·  Rib Jersey & Air Mesh',
-        description: 'Layered jersey and air mesh construction. The open mesh evokes vulnerability and exposure, while the rib jersey grounds the body — movement and stillness held in tension.'
+    worlds: {
+        title: 'Between Worlds',
+        tags: 'Sportswear · Menswear · Genderless',
+        description: 'A study in contrast, asymmetric forms and shifting grey tones inspired by the natural landscapes of Iran, where opposites meet in quiet harmony. The concept references the contrast that exists everywhere — between social levels, genders, in nature, and in different thoughts. Asymmetry of form and a harmonic combination of light and dark shades give shape to this duality.',
+        outfits: [
+            {
+                image: 'images/dress-02.jpg',
+                alt: 'Outfit 1 – Between Worlds, 2022',
+                title: 'Outfit 1 – Key Look',
+                meta: 'Cashmere & Silk',
+                description: 'Asymmetric coat in cashmere and wool paired with an asymmetric jumpsuit in cotton and wool — both wearable from either side.'
+            },
+            {
+                image: 'images/worlds-outfit2.jpg',
+                alt: 'Outfit 2 – Between Worlds, 2022',
+                title: 'Outfit 2',
+                meta: 'Cotton & Cashmere',
+                description: 'Asymmetric trousers in cotton paired with a hoody featuring two different sleeves, and a cashmere-wool vest fastened with a buttoned waistband.'
+            }
+        ]
     },
-    'fear-3': {
-        image: 'images/fear-outfit3.jpg',
-        alt: 'Outfit 3 – Fear Into Freedom, 2023',
-        title: 'Fear Into Freedom — Outfit 3',
-        meta: '2023  ·  Reflective Fabric & Felt',
-        description: 'Reflective surfaces confront the viewer — a mirror of society\'s gaze turned back on itself. Felt grounds the piece in warmth and solidity, anchoring protest in the human body.'
+    people: {
+        title: 'People',
+        tags: 'Creative Identity · Womenswear',
+        description: 'A celebration of faces, gazes, and races — this collection brings human emotion to life on fabric, showing that despite our differences, love is always possible. Faces are rendered through embroidery and metal earring details, turning each piece into a wearable portrait. Crafted in self-patterned cotton and two-layered cotton-filled self-patterned jersey.',
+        outfits: [
+            {
+                image: 'images/dress-03.jpg',
+                alt: 'Outfit 1 – People, 2021',
+                title: 'Outfit 1',
+                meta: 'Self-patterned Cotton',
+                description: 'Embroidered faces emerge across the surface — each one unique, each one a story of emotional connection.'
+            },
+            {
+                image: 'images/people-outfit2.jpg',
+                alt: 'Outfit 2 – People, 2021',
+                title: 'Outfit 2',
+                meta: 'Cotton-filled Jersey',
+                description: 'Two-layered cotton-filled self-patterned jersey with metal earring details — portraits rendered in three dimensions.'
+            }
+        ]
     },
-    'fear-4': {
-        image: 'images/fear-outfit4.jpg',
-        alt: 'Outfit 4 – Fear Into Freedom, 2023',
-        title: 'Fear Into Freedom — Outfit 4',
-        meta: '2023  ·  Faux Fur & Wool',
-        description: 'Softness as defiance. Faux fur textures merge with structured wool to challenge what tenderness means in the context of resistance. Pink as a color of protest: security, sensitivity, and the feminist movement embodied in a single garment.'
+    love: {
+        title: 'Worn With Love',
+        tags: 'Sustainability · Upcycling · Genderless',
+        description: 'Upcycling is more than sustainability — it is a philosophy, an emotion, and a way of staying close to the people we love. This collection transforms old, worn garments into something new and modern, beginning with a mother\'s trenchcoat remade into a fresh silhouette with the same spirit of love and attachment at its core. Two separable pieces, joined by buttons, crafted from reclaimed materials into something made to last.',
+        outfits: [
+            {
+                image: 'images/dress-04.jpg',
+                alt: 'Outfit 1 – Worn With Love, 2020',
+                title: 'Outfit 1 – The Trenchcoat',
+                meta: 'Recycled Cotton & Linen',
+                description: 'Remade from a mother\'s worn trenchcoat into a modern two-piece silhouette. The seams are finished with fabric bands for durability.'
+            }
+        ]
     },
-    'fear-5': {
-        image: 'images/fear-outfit5.jpg',
-        alt: 'Outfit 5 – Fear Into Freedom, 2023',
-        title: 'Fear Into Freedom — Outfit 5',
-        meta: '2023  ·  Neoprene & Rib Jersey',
-        description: 'Pink as protest: historically charged, now recast in clean neoprene lines. The genderless silhouette speaks to everyone who has overcome a fear imposed by others.'
+    wild: {
+        title: 'Style & Wildness',
+        tags: 'Menswear',
+        description: 'The main inspirations are the abstract and geometric patterns of Persian carpets and clothing as cultural references, paired with asymmetric forms found in nature. The outfit combines an asymmetric jumpsuit and a half-coat crafted from a special fabric patterned with Persian carpet motifs. Colors draw from the traditional carpet palette, accented with green drawn from the natural world.',
+        outfits: [
+            {
+                image: 'images/wild-outfit1.jpg',
+                alt: 'Outfit 1 – Style & Wildness, 2019',
+                title: 'Outfit 1',
+                meta: 'Persian Carpet-patterned Fabric',
+                description: 'Asymmetric jumpsuit and half-coat woven from fabric bearing Persian carpet motifs — culture worn on the body.'
+            }
+        ]
     },
-    'fear-6': {
-        image: 'images/fear-outfit6.jpg',
-        alt: 'Outfit 6 – Fear Into Freedom, 2023',
-        title: 'Fear Into Freedom — Outfit 6',
-        meta: '2023  ·  Wool & Air Mesh',
-        description: 'The closing look — green for hope, grey for struggle, worn together as one. Shades of green inspire renaissance and calm; grey carries the weight of ongoing resistance. Together, they are the collection\'s final word.'
+    super: {
+        title: 'Supernormal',
+        tags: 'Womenswear',
+        description: 'Inspired by the everyday object — the Q-Tip. Plain, white, rhythmic in its form when massed together. The dress echoes its shape and color: crafted from a white secondhand bedcover, ironed with unorganized folds to suggest the cotton tips, and organized folds to reflect the rhythmic order of Q-Tips grouped in mass. The commonplace made extraordinary through the logic of repetition.',
+        outfits: [
+            {
+                image: 'images/super-outfit1.jpg',
+                alt: 'Outfit 1 – Supernormal, 2019',
+                title: 'Outfit 1',
+                meta: 'Secondhand Bedcover (White Cotton)',
+                description: 'A single white secondhand bedcover, ironed into deliberate folds — form and rhythm drawn from Q-Tips grouped in mass.'
+            }
+        ]
     },
-
-    // ── Collection 2: Between Worlds ──
-    'worlds-1': {
-        image: 'images/dress-02.jpg',
-        alt: 'Outfit 1 – Between Worlds, 2022',
-        title: 'Between Worlds — Key Look',
-        meta: '2022  ·  Cashmere & Silk; Cotton & Wool',
-        description: 'Asymmetric coat in cashmere and wool paired with an asymmetric jumpsuit in cotton and wool, both wearable from either side. A silk collar completes the look. The asymmetry of form and the contrast of light and dark grey tones reflect the harmony of opposites — inspired by the natural landscapes of Iran.'
-    },
-    'worlds-2': {
-        image: 'images/worlds-outfit2.jpg',
-        alt: 'Outfit 2 – Between Worlds, 2022',
-        title: 'Between Worlds — Outfit 2',
-        meta: '2022  ·  Cotton & Cashmere-Wool',
-        description: 'Asymmetric trousers in cotton, a hoody with two different sleeves, and a cashmere-wool vest fastened by a buttoned waistband. Sportswear sensibility meets tailored contrast — the functional and the luxurious in quiet dialogue.'
-    },
-
-    // ── Collection 3: People ──
-    'people-1': {
-        image: 'images/dress-03.jpg',
-        alt: 'Outfit 1 – People, 2021',
-        title: 'People — Outfit 1',
-        meta: '2021  ·  Self-patterned Cotton',
-        description: 'Embroidered faces emerge across the surface of self-patterned cotton — each one unique, each one a story of emotional connection. Despite our different emotional states, we can always love each other.'
-    },
-    'people-2': {
-        image: 'images/people-outfit2.jpg',
-        alt: 'Outfit 2 – People, 2021',
-        title: 'People — Outfit 2',
-        meta: '2021  ·  Two-layered Cotton-filled Jersey',
-        description: 'Two-layered cotton-filled self-patterned jersey with metal earring details — portraits rendered in three dimensions. Faces are sometimes sewn onto fabric and sometimes made from metal, turning each garment into a wearable portrait gallery.'
-    },
-
-    // ── Collection 4: Worn With Love ──
-    'love-1': {
-        image: 'images/dress-04.jpg',
-        alt: 'Outfit 1 – Worn With Love, 2020',
-        title: 'Worn With Love — The Trenchcoat',
-        meta: '2020  ·  Recycled Cotton & Linen',
-        description: 'Remade from a mother\'s worn trenchcoat into a modern two-piece silhouette. The seams are finished with fabric bands for durability. Two separable pieces joined by buttons — the original love and attachment preserved in every reclaimed thread. Upcycling as philosophy, emotion, and a way of staying close to the people we love.'
-    },
-
-    // ── Collection 5: Style & Wildness ──
-    'wild-1': {
-        image: 'images/wild-outfit1.jpg',
-        alt: 'Outfit 1 – Style & Wildness, 2019',
-        title: 'Style & Wildness — Outfit 1',
-        meta: '2019  ·  Persian Carpet-patterned Fabric',
-        description: 'Asymmetric jumpsuit and half-coat woven from fabric bearing Persian carpet motifs — culture worn on the body. The abstract geometric patterns of traditional Persian textiles meet the asymmetric forms of the natural world. Colors drawn from the traditional carpet palette, accented with green from nature.'
-    },
-
-    // ── Collection 6: Supernormal ──
-    'super-1': {
-        image: 'images/super-outfit1.jpg',
-        alt: 'Outfit 1 – Supernormal, 2019',
-        title: 'Supernormal — Outfit 1',
-        meta: '2019  ·  Secondhand Bedcover (White Cotton)',
-        description: 'A single white secondhand bedcover, ironed into deliberate folds. Unorganized folds suggest the cotton tips; organized folds reflect the rhythmic order of Q-Tips grouped in mass. The everyday object — commonplace, white, repetitive — elevated into the extraordinary through the logic of form and repetition.'
-    },
-
-    // ── Collection 7: Textile Design ──
-    'textile-1': {
-        image: 'images/textile-outfit1.jpg',
-        alt: 'Hands Print – Textile Design, 2022',
-        title: 'Textile Design — Hands Print',
-        meta: '2022  ·  Digital Print on Cotton',
-        description: 'Overlapping hand motifs with blended, mixing colors — two people, two lives, meeting at the point of touch. Hands speak together when we meet and shake them. Their movements in different body gestures were the starting point: showing the effect of people on each other when they hold hands.'
-    },
-    'textile-2': {
-        image: 'images/textile-outfit2.jpg',
-        alt: 'Wrinkled Thoughts Print – Textile Design, 2022',
-        title: 'Textile Design — Wrinkled Thoughts Print',
-        meta: '2022  ·  Digital Print on Cotton',
-        description: 'A creative mind rendered as fabric. Different thoughts cross each other and make thinking look like a wrinkled surface — so the print was made from wrinkled fabric itself, photographed and returned to cloth as pattern. The material and the metaphor become one.'
+    textile: {
+        title: 'Textile Design',
+        tags: 'Digital Print · Womenswear',
+        description: 'Two digital prints exploring human connection. The first — inspired by hands — captures the effect of people on each other when they touch, with overlapping forms and blending colors showing where lives meet. The second print emerges from the image of a creative mind at work: thoughts crossing and intersecting like the surface of wrinkled fabric, rendered literally as the source material for print.',
+        outfits: [
+            {
+                image: 'images/textile-outfit1.jpg',
+                alt: 'Hands Print – Textile Design, 2022',
+                title: 'Hands Print',
+                meta: 'Digital Print on Cotton',
+                description: 'Overlapping hand motifs with blended colors — two people, two lives, meeting at the point of touch.'
+            },
+            {
+                image: 'images/textile-outfit2.jpg',
+                alt: 'Wrinkled Thoughts Print – Textile Design, 2022',
+                title: 'Wrinkled Thoughts Print',
+                meta: 'Digital Print on Cotton',
+                description: 'A creative mind rendered as fabric — the wrinkles of thought photographed and reprinted as pattern.'
+            }
+        ]
     }
 };
 
 // ===========================
-// Open Lightbox
+// Collection Modal Functionality
 // ===========================
 
-function openLightbox(dressId) {
-    const dress = dressData[dressId];
-    if (!dress) return;
+const collectionModal = document.getElementById('collection-modal');
+const collectionModalTitle = document.getElementById('collection-modal-title');
+const collectionModalTags = document.getElementById('collection-modal-tags');
+const collectionModalDescription = document.getElementById('collection-modal-description');
+const collectionModalGallery = document.getElementById('collection-modal-gallery');
+const collectionModalClose = document.querySelector('.collection-modal-close');
 
-    lightboxImage.src = dress.image;
-    lightboxImage.alt = dress.alt;
-    lightboxTitle.textContent = dress.title;
-    lightboxMeta.textContent = dress.meta;
-    lightboxDescription.textContent = dress.description;
+// Outfit modal elements
+const outfitModal = document.getElementById('outfit-modal');
+const outfitModalImage = document.getElementById('outfit-modal-image');
+const outfitModalTitle = document.getElementById('outfit-modal-title');
+const outfitModalMeta = document.getElementById('outfit-modal-meta');
+const outfitModalDescription = document.getElementById('outfit-modal-description');
+const outfitModalClose = document.querySelector('.outfit-modal-close');
 
-    lightbox.showModal();
+// Open Collection Modal
+function openCollectionModal(collectionId) {
+    const collection = collectionsData[collectionId];
+    
+    if (!collection) return;
+    
+    // Set modal header
+    collectionModalTitle.textContent = collection.title;
+    collectionModalTags.textContent = collection.tags;
+    collectionModalDescription.textContent = collection.description;
+    
+    // Clear and populate gallery
+    collectionModalGallery.innerHTML = '';
+    
+    collection.outfits.forEach((outfit, index) => {
+        const outfitCard = document.createElement('article');
+        outfitCard.className = 'modal-outfit-card';
+        outfitCard.dataset.outfitIndex = index;
+        outfitCard.dataset.collectionId = collectionId;
+        
+        outfitCard.innerHTML = `
+            <div class="modal-outfit-image-wrapper">
+                <img src="${outfit.image}" 
+                     alt="${outfit.alt}" 
+                     class="modal-outfit-image"
+                     loading="lazy">
+            </div>
+            <div class="modal-outfit-info">
+                <h4 class="modal-outfit-title">${outfit.title}</h4>
+                <p class="modal-outfit-meta">${outfit.meta}</p>
+                <p class="modal-outfit-description">${outfit.description}</p>
+            </div>
+        `;
+        
+        // Add click handler to open outfit detail modal
+        outfitCard.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openOutfitModal(collectionId, index);
+        });
+        
+        // Keyboard accessibility
+        outfitCard.setAttribute('tabindex', '0');
+        outfitCard.setAttribute('role', 'button');
+        outfitCard.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                e.stopPropagation();
+                openOutfitModal(collectionId, index);
+            }
+        });
+        
+        collectionModalGallery.appendChild(outfitCard);
+    });
+    
+    // Show modal
+    collectionModal.showModal();
+    
+    // Prevent body scroll when modal is open
     document.body.style.overflow = 'hidden';
 }
 
-// ===========================
-// Close Lightbox
-// ===========================
-
-function closeLightbox() {
-    lightbox.close();
+// Close Collection Modal
+function closeCollectionModal() {
+    collectionModal.close();
+    
+    // Restore body scroll
     document.body.style.overflow = '';
+}
+
+// Open Outfit Detail Modal
+function openOutfitModal(collectionId, outfitIndex) {
+    const collection = collectionsData[collectionId];
+    
+    if (!collection || !collection.outfits[outfitIndex]) return;
+    
+    const outfit = collection.outfits[outfitIndex];
+    
+    // Set modal content
+    outfitModalImage.src = outfit.image;
+    outfitModalImage.alt = outfit.alt;
+    outfitModalTitle.textContent = outfit.title;
+    outfitModalMeta.textContent = outfit.meta;
+    outfitModalDescription.textContent = outfit.description;
+    
+    // Show modal
+    outfitModal.showModal();
+}
+
+// Close Outfit Modal
+function closeOutfitModal() {
+    outfitModal.close();
 }
 
 // ===========================
 // Event Listeners
 // ===========================
 
-document.querySelectorAll('.dress-card').forEach(card => {
-    const dressId = card.dataset.dressId;
-
-    const imageWrapper = card.querySelector('.dress-image-wrapper');
-    imageWrapper.addEventListener('click', () => openLightbox(dressId));
-
-    const viewButton = card.querySelector('.view-details-btn');
-    viewButton.addEventListener('click', (e) => {
-        e.stopPropagation();
-        openLightbox(dressId);
+// Add click listeners to all collection cards
+document.querySelectorAll('.collection-card').forEach(card => {
+    const collectionId = card.dataset.collectionId;
+    
+    // Click on card or button
+    card.addEventListener('click', (e) => {
+        openCollectionModal(collectionId);
     });
-
-    imageWrapper.setAttribute('tabindex', '0');
-    imageWrapper.setAttribute('role', 'button');
-    imageWrapper.addEventListener('keydown', (e) => {
+    
+    // Keyboard accessibility
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            openLightbox(dressId);
+            openCollectionModal(collectionId);
         }
     });
 });
 
-closeButton.addEventListener('click', closeLightbox);
+// Close button click
+collectionModalClose.addEventListener('click', closeCollectionModal);
 
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
+// Close on backdrop click
+collectionModal.addEventListener('click', (e) => {
+    if (e.target === collectionModal) {
+        closeCollectionModal();
+    }
 });
 
-lightbox.addEventListener('cancel', () => closeLightbox());
+// Close on ESC key
+collectionModal.addEventListener('cancel', (e) => {
+    closeCollectionModal();
+});
+
+// Outfit modal close button
+outfitModalClose.addEventListener('click', closeOutfitModal);
+
+// Close outfit modal on backdrop click
+outfitModal.addEventListener('click', (e) => {
+    if (e.target === outfitModal) {
+        closeOutfitModal();
+    }
+});
+
+// Close outfit modal on ESC key
+outfitModal.addEventListener('cancel', (e) => {
+    closeOutfitModal();
+});
 
 // ===========================
 // Smooth Scroll for Navigation
@@ -202,39 +332,41 @@ lightbox.addEventListener('cancel', () => closeLightbox());
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
+        
         const targetId = link.getAttribute('href');
         const targetSection = document.querySelector(targetId);
+        
         if (targetSection) {
             const headerOffset = 80;
-            const offsetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            const elementPosition = targetSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         }
     });
 });
 
 // ===========================
-// Intersection Observer for Animations
+// Loading State for Images
 // ===========================
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-document.querySelectorAll('.dress-card').forEach(card => observer.observe(card));
-
-// ===========================
-// Image Loading States
-// ===========================
-
-document.querySelectorAll('.dress-image, .intro-image').forEach(img => {
+document.querySelectorAll('.collection-card-image, .intro-image').forEach(img => {
     if (!img.complete) {
         img.style.opacity = '0';
         img.style.transition = 'opacity 0.5s ease';
-        img.addEventListener('load', () => { img.style.opacity = '1'; });
+        
+        img.addEventListener('load', () => {
+            img.style.opacity = '1';
+        });
     }
 });
 
-console.log('%c✨ Letova – Leila Torkian', 'font-size: 20px; font-weight: bold; color: #8B7355;');
-console.log('%cFashion portfolio — 7 collections, 2019–2023.', 'font-size: 14px; color: #666;');
+// ===========================
+// Console Welcome Message
+// ===========================
+
+console.log('%c✨ Letova Portfolio', 'font-size: 20px; font-weight: bold; color: #8B7355;');
+console.log('%cDesigned with elegance and accessibility in mind.', 'font-size: 14px; color: #666;');
