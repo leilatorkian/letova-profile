@@ -9,46 +9,144 @@ const collectionsData = {
         description: 'A wearable manifesto against fear. The feeling of fear opposes freedom — the greater the fear, the further one is from personal liberty. Inspired by the Iranian people\'s courage in fighting for their rights, this collection visualizes fear and translates it into textile. The color palette — pink, green, and grey — speaks to protest, hope, and exhaustion. Both feminine and unisex, the collection dismantles false gender stereotypes as it dismantles fear itself.',
         outfits: [
             {
-                image: 'images/dress-01.jpg',
-                alt: 'Outfit 1 – Fear Into Freedom, 2023',
-                title: 'Outfit 1',
+                image: 'images/fear-outfit1-a.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
                 meta: 'Neoprene & Wool',
                 description: 'Structured neoprene silhouette with wool detail — designed for those who dare to fight for freedom.'
             },
             {
-                image: 'images/fear-outfit2.jpg',
-                alt: 'Outfit 2 – Fear Into Freedom, 2023',
-                title: 'Outfit 2',
+                image: 'images/fear-outfit1-b.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
                 meta: 'Rib Jersey & Air Mesh',
                 description: 'Layered jersey and mesh construction evoking movement and vulnerability, set against a grey ground.'
             },
             {
-                image: 'images/fear-outfit3.jpg',
-                alt: 'Outfit 3 – Fear Into Freedom, 2023',
-                title: 'Outfit 3',
+                image: 'images/fear-outfit1-c.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
                 meta: 'Reflective Fabric & Felt',
                 description: 'Reflective surfaces confront the viewer — a mirror of society\'s gaze turned back on itself.'
             },
             {
-                image: 'images/fear-outfit4.jpg',
-                alt: 'Outfit 4 – Fear Into Freedom, 2023',
-                title: 'Outfit 4',
+                image: 'images/fear-outfit1-d.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
                 meta: 'Faux Fur & Wool',
                 description: 'Softness as defiance — faux fur textures merge with structured wool to challenge what tenderness means.'
             },
             {
-                image: 'images/fear-outfit5.jpg',
-                alt: 'Outfit 5 – Fear Into Freedom, 2023',
-                title: 'Outfit 5',
+                image: 'images/fear-outfit1-e.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
                 meta: 'Neoprene & Rib Jersey',
                 description: 'Pink as protest: historically a color of resistance, recast here in clean neoprene lines.'
             },
             {
-                image: 'images/fear-outfit6.jpg',
-                alt: 'Outfit 6 – Fear Into Freedom, 2023',
-                title: 'Outfit 6',
+                image: 'images/fear-outfit1-f.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
                 meta: 'Wool & Air Mesh',
                 description: 'The closing piece — green for hope, grey for struggle, worn together as one.'
+            },
+            {
+                image: 'images/fear-outfit2-a.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Cotton & Mesh',
+                description: 'Second outfit in the collection — continuing the exploration of fear transformed into freedom.'
+            },
+            {
+                image: 'images/fear-outfit2-b.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Jersey & Wool',
+                description: 'Layered construction exploring the tension between protection and exposure.'
+            },
+            {
+                image: 'images/fear-outfit2-c.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Neoprene & Cotton',
+                description: 'Bold silhouette that challenges conventional notions of strength and vulnerability.'
+            },
+            {
+                image: 'images/fear-outfit2-d.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Mixed Textiles',
+                description: 'A harmonious blend of textures representing the complexity of the human spirit.'
+            },
+            {
+                image: 'images/fear-outfit2-e.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Wool & Synthetic',
+                description: 'The final view — capturing movement, resistance, and the path to liberation.'
+            },
+            {
+                image: 'images/fear-outfit3-a.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Cotton & Neoprene',
+                description: 'Third outfit in the collection — continuing the exploration of freedom through design.'
+            },
+            {
+                image: 'images/fear-outfit3-b.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Mixed Fabrics',
+                description: 'Innovative textile combinations that speak to resilience and transformation.'
+            },
+            {
+                image: 'images/fear-outfit3-c.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Wool & Mesh',
+                description: 'A powerful statement of strength and vulnerability woven together.'
+            },
+            {
+                image: 'images/fear-outfit4-a.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Neoprene & Cotton',
+                description: 'Fourth outfit in the collection — bold forms that challenge and inspire.'
+            },
+            {
+                image: 'images/fear-outfit4-b.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Mixed Textiles',
+                description: 'Dynamic silhouettes exploring the intersection of fear and freedom.'
+            },
+            {
+                image: 'images/fear-outfit4-c.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Wool & Synthetic',
+                description: 'A celebration of courage through innovative textile design.'
+            },
+            {
+                image: 'images/fear-outfit5-a.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Cotton & Neoprene',
+                description: 'Fifth outfit in the collection — a powerful exploration of freedom and identity.'
+            },
+            {
+                image: 'images/fear-outfit5-b.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Mixed Fabrics',
+                description: 'Innovative construction that speaks to resilience and transformation.'
+            },
+            {
+                image: 'images/fear-outfit5-c.jpg',
+                alt: 'Fear Into Freedom, 2023',
+                title: '',
+                meta: 'Wool & Mesh',
+                description: 'The essence of freedom captured in textile form.'
             }
         ]
     },
@@ -58,18 +156,39 @@ const collectionsData = {
         description: 'A study in contrast, asymmetric forms and shifting grey tones inspired by the natural landscapes of Iran, where opposites meet in quiet harmony. The concept references the contrast that exists everywhere — between social levels, genders, in nature, and in different thoughts. Asymmetry of form and a harmonic combination of light and dark shades give shape to this duality.',
         outfits: [
             {
-                image: 'images/dress-02.jpg',
-                alt: 'Outfit 1 – Between Worlds, 2022',
-                title: 'Outfit 1 – Key Look',
-                meta: 'Cashmere & Silk',
+                image: 'images/worlds-outfit1-a.jpg',
+                alt: 'Between Worlds, 2022',
+                title: '',
+                meta: 'Cashmere & Wool',
                 description: 'Asymmetric coat in cashmere and wool paired with an asymmetric jumpsuit in cotton and wool — both wearable from either side.'
             },
             {
-                image: 'images/worlds-outfit2.jpg',
-                alt: 'Outfit 2 – Between Worlds, 2022',
-                title: 'Outfit 2',
+                image: 'images/worlds-outfit1-b.jpg',
+                alt: 'Between Worlds, 2022',
+                title: '',
                 meta: 'Cotton & Cashmere',
                 description: 'Asymmetric trousers in cotton paired with a hoody featuring two different sleeves, and a cashmere-wool vest fastened with a buttoned waistband.'
+            },
+            {
+                image: 'images/worlds-outfit1-c.jpg',
+                alt: 'Between Worlds, 2022',
+                title: '',
+                meta: 'Wool & Silk',
+                description: 'A harmonious blend of contrasting textures and asymmetric forms, reflecting the duality found in nature and design.'
+            },
+            {
+                image: 'images/worlds-outfit1-d.jpg',
+                alt: 'Between Worlds, 2022',
+                title: '',
+                meta: 'Wool & Cashmere',
+                description: 'Layered asymmetric design exploring the contrast between light and dark, structure and fluidity.'
+            },
+            {
+                image: 'images/worlds-outfit1-e.jpg',
+                alt: 'Between Worlds, 2022',
+                title: '',
+                meta: 'Cotton & Silk',
+                description: 'The final piece of the collection — bringing together all contrasts in harmonious balance.'
             }
         ]
     },
@@ -80,15 +199,15 @@ const collectionsData = {
         outfits: [
             {
                 image: 'images/dress-03.jpg',
-                alt: 'Outfit 1 – People, 2021',
-                title: 'Outfit 1',
+                alt: 'People, 2021',
+                title: '',
                 meta: 'Self-patterned Cotton',
                 description: 'Embroidered faces emerge across the surface — each one unique, each one a story of emotional connection.'
             },
             {
                 image: 'images/people-outfit2.jpg',
-                alt: 'Outfit 2 – People, 2021',
-                title: 'Outfit 2',
+                alt: 'People, 2021',
+                title: '',
                 meta: 'Cotton-filled Jersey',
                 description: 'Two-layered cotton-filled self-patterned jersey with metal earring details — portraits rendered in three dimensions.'
             }
@@ -101,8 +220,8 @@ const collectionsData = {
         outfits: [
             {
                 image: 'images/dress-04.jpg',
-                alt: 'Outfit 1 – Worn With Love, 2020',
-                title: 'Outfit 1 – The Trenchcoat',
+                alt: 'Worn With Love, 2020',
+                title: '',
                 meta: 'Recycled Cotton & Linen',
                 description: 'Remade from a mother\'s worn trenchcoat into a modern two-piece silhouette. The seams are finished with fabric bands for durability.'
             }
@@ -115,8 +234,8 @@ const collectionsData = {
         outfits: [
             {
                 image: 'images/wild-outfit1.jpg',
-                alt: 'Outfit 1 – Style & Wildness, 2019',
-                title: 'Outfit 1',
+                alt: 'Style & Wildness, 2019',
+                title: '',
                 meta: 'Persian Carpet-patterned Fabric',
                 description: 'Asymmetric jumpsuit and half-coat woven from fabric bearing Persian carpet motifs — culture worn on the body.'
             }
@@ -129,8 +248,8 @@ const collectionsData = {
         outfits: [
             {
                 image: 'images/super-outfit1.jpg',
-                alt: 'Outfit 1 – Supernormal, 2019',
-                title: 'Outfit 1',
+                alt: 'Supernormal, 2019',
+                title: '',
                 meta: 'Secondhand Bedcover (White Cotton)',
                 description: 'A single white secondhand bedcover, ironed into deliberate folds — form and rhythm drawn from Q-Tips grouped in mass.'
             }
@@ -143,15 +262,15 @@ const collectionsData = {
         outfits: [
             {
                 image: 'images/textile-outfit1.jpg',
-                alt: 'Hands Print – Textile Design, 2022',
-                title: 'Hands Print',
+                alt: 'Textile Design, 2022',
+                title: '',
                 meta: 'Digital Print on Cotton',
                 description: 'Overlapping hand motifs with blended colors — two people, two lives, meeting at the point of touch.'
             },
             {
                 image: 'images/textile-outfit2.jpg',
-                alt: 'Wrinkled Thoughts Print – Textile Design, 2022',
-                title: 'Wrinkled Thoughts Print',
+                alt: 'Textile Design, 2022',
+                title: '',
                 meta: 'Digital Print on Cotton',
                 description: 'A creative mind rendered as fabric — the wrinkles of thought photographed and reprinted as pattern.'
             }
@@ -177,12 +296,22 @@ const outfitModalTitle = document.getElementById('outfit-modal-title');
 const outfitModalMeta = document.getElementById('outfit-modal-meta');
 const outfitModalDescription = document.getElementById('outfit-modal-description');
 const outfitModalClose = document.querySelector('.outfit-modal-close');
+const outfitNavPrev = document.querySelector('.outfit-nav-prev');
+const outfitNavNext = document.querySelector('.outfit-nav-next');
+
+// Track current collection and outfit
+let currentCollectionId = null;
+let currentOutfitIndex = 0;
 
 // Open Collection Modal
 function openCollectionModal(collectionId) {
     const collection = collectionsData[collectionId];
     
     if (!collection) return;
+    
+    // Store current collection
+    currentCollectionId = collectionId;
+    currentOutfitIndex = 0;
     
     // Set modal header
     collectionModalTitle.textContent = collection.title;
@@ -243,6 +372,10 @@ function openCollectionModal(collectionId) {
 function closeCollectionModal() {
     collectionModal.close();
     
+    // Reset current collection
+    currentCollectionId = null;
+    currentOutfitIndex = 0;
+    
     // Restore body scroll
     document.body.style.overflow = '';
 }
@@ -253,6 +386,10 @@ function openOutfitModal(collectionId, outfitIndex) {
     
     if (!collection || !collection.outfits[outfitIndex]) return;
     
+    // Update current index and collection
+    currentCollectionId = collectionId;
+    currentOutfitIndex = outfitIndex;
+    
     const outfit = collection.outfits[outfitIndex];
     
     // Set modal content
@@ -262,6 +399,9 @@ function openOutfitModal(collectionId, outfitIndex) {
     outfitModalMeta.textContent = outfit.meta;
     outfitModalDescription.textContent = outfit.description;
     
+    // Update navigation buttons
+    updateNavButtons();
+    
     // Show modal
     outfitModal.showModal();
 }
@@ -269,6 +409,59 @@ function openOutfitModal(collectionId, outfitIndex) {
 // Close Outfit Modal
 function closeOutfitModal() {
     outfitModal.close();
+}
+
+// Navigate to previous outfit
+function navigateToPrevOutfit() {
+    if (!currentCollectionId) return;
+    
+    const collection = collectionsData[currentCollectionId];
+    if (!collection) return;
+    
+    currentOutfitIndex--;
+    if (currentOutfitIndex < 0) {
+        currentOutfitIndex = collection.outfits.length - 1;
+    }
+    
+    openOutfitModal(currentCollectionId, currentOutfitIndex);
+    updateNavButtons();
+}
+
+// Navigate to next outfit
+function navigateToNextOutfit() {
+    if (!currentCollectionId) return;
+    
+    const collection = collectionsData[currentCollectionId];
+    if (!collection) return;
+    
+    currentOutfitIndex++;
+    if (currentOutfitIndex >= collection.outfits.length) {
+        currentOutfitIndex = 0;
+    }
+    
+    openOutfitModal(currentCollectionId, currentOutfitIndex);
+    updateNavButtons();
+}
+
+// Update navigation button states
+function updateNavButtons() {
+    if (!currentCollectionId) return;
+    
+    const collection = collectionsData[currentCollectionId];
+    if (!collection) return;
+    
+    // Always enable both buttons for circular navigation
+    outfitNavPrev.disabled = false;
+    outfitNavNext.disabled = false;
+    
+    // Show/hide buttons if only one outfit
+    if (collection.outfits.length <= 1) {
+        outfitNavPrev.style.display = 'none';
+        outfitNavNext.style.display = 'none';
+    } else {
+        outfitNavPrev.style.display = 'flex';
+        outfitNavNext.style.display = 'flex';
+    }
 }
 
 // ===========================
@@ -323,6 +516,24 @@ outfitModal.addEventListener('click', (e) => {
 // Close outfit modal on ESC key
 outfitModal.addEventListener('cancel', (e) => {
     closeOutfitModal();
+});
+
+// Navigation button listeners
+outfitNavPrev.addEventListener('click', navigateToPrevOutfit);
+outfitNavNext.addEventListener('click', navigateToNextOutfit);
+
+// Keyboard navigation for outfit modal only
+document.addEventListener('keydown', (e) => {
+    // Only navigate when outfit modal is open
+    if (outfitModal.open) {
+        if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            navigateToPrevOutfit();
+        } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            navigateToNextOutfit();
+        }
+    }
 });
 
 // ===========================

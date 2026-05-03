@@ -257,6 +257,7 @@ button:focus {
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-xxl);
     justify-items: center;
+    align-items: start;
 }
 
 /* Collection Card */
@@ -266,9 +267,12 @@ button:focus {
     overflow: hidden;
     transition: transform var(--transition-medium), box-shadow var(--transition-medium);
     cursor: pointer;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    width: 320px;
+    max-width: 100%;
+    place-self: center;
+    transform-origin: center center;
+    display: flex;
+    flex-direction: column;
 }
 
 .collection-card:hover {
@@ -334,12 +338,15 @@ button:focus {
 
 .collection-card-info {
     padding: var(--spacing-lg);
-    text-align: left;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .collection-card-meta {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-bottom: var(--spacing-sm);
     font-size: 0.85rem;
@@ -350,6 +357,7 @@ button:focus {
 .collection-card-title {
     margin-bottom: var(--spacing-xs);
     color: var(--color-text-primary);
+    word-wrap: break-word;
 }
 
 .collection-card-tags {
@@ -362,6 +370,7 @@ button:focus {
     color: var(--color-text-secondary);
     font-size: 0.95rem;
     line-height: 1.6;
+    word-wrap: break-word;
 }
 
 /* ===========================
@@ -371,9 +380,9 @@ button:focus {
 .collection-modal {
     border: none;
     padding: 0;
-    max-width: 95vw;
-    max-height: 95vh;
-    width: 1200px;
+    width: 95vw;
+    max-width: 1400px;
+    max-height: 90vh;
     background: var(--color-white);
     border-radius: 12px;
     box-shadow: var(--shadow-lg);
@@ -387,7 +396,7 @@ button:focus {
 
 .collection-modal-content {
     position: relative;
-    max-height: 95vh;
+    max-height: 90vh;
     overflow-y: auto;
     padding: var(--spacing-xl);
 }
@@ -399,17 +408,17 @@ button:focus {
     float: right;
     background: var(--color-white);
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 100;
     transition: all var(--transition-fast);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .collection-modal-close:hover,
@@ -422,12 +431,15 @@ button:focus {
 .collection-modal-header {
     margin-bottom: var(--spacing-xl);
     clear: both;
-    text-align: left;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .collection-modal-title {
     margin-bottom: var(--spacing-sm);
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    word-wrap: break-word;
 }
 
 .collection-modal-tags {
@@ -440,6 +452,8 @@ button:focus {
     color: var(--color-text-secondary);
     line-height: 1.8;
     max-width: 800px;
+    margin: 0 auto;
+    word-wrap: break-word;
 }
 
 /* Gallery inside modal */
@@ -448,6 +462,7 @@ button:focus {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: var(--spacing-lg);
     justify-items: center;
+    align-items: start;
 }
 
 .modal-outfit-card {
@@ -456,9 +471,12 @@ button:focus {
     overflow: hidden;
     transition: transform var(--transition-medium), box-shadow var(--transition-medium);
     cursor: pointer;
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
+    width: 250px;
+    max-width: 100%;
+    place-self: center;
+    transform-origin: center center;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-outfit-card:hover {
@@ -471,6 +489,7 @@ button:focus {
     aspect-ratio: 3 / 4;  /* Portrait aspect ratio */
     overflow: hidden;
     background: var(--color-text-secondary);
+    flex-shrink: 0;
 }
 
 .modal-outfit-image {
@@ -482,7 +501,10 @@ button:focus {
 
 .modal-outfit-info {
     padding: var(--spacing-md);
-    text-align: left;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-outfit-title {
@@ -491,12 +513,18 @@ button:focus {
     font-family: var(--font-heading);
 }
 
+.modal-outfit-title:empty {
+    display: none;
+    margin: 0;
+}
+
 .modal-outfit-meta {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--color-accent);
     margin-bottom: var(--spacing-sm);
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
+    word-wrap: break-word;
 }
 
 .modal-outfit-description {
@@ -512,7 +540,8 @@ button:focus {
 .outfit-modal {
     border: none;
     padding: 0;
-    max-width: 90vw;
+    width: 90vw;
+    max-width: 1200px;
     max-height: 90vh;
     background: var(--color-white);
     border-radius: 8px;
@@ -529,25 +558,26 @@ button:focus {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     max-height: 90vh;
+    height: 100%;
 }
 
 .outfit-modal-close {
     position: absolute;
-    top: var(--spacing-sm);
-    right: var(--spacing-sm);
+    top: var(--spacing-md);
+    right: var(--spacing-md);
     background: var(--color-white);
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 100;
     transition: all var(--transition-fast);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .outfit-modal-close:hover,
@@ -577,26 +607,86 @@ button:focus {
     flex-direction: column;
     justify-content: center;
     overflow-y: auto;
-    text-align: left;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .outfit-modal-title {
     margin-bottom: var(--spacing-sm);
-    font-size: 1.75rem;
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+    word-wrap: break-word;
+}
+
+.outfit-modal-title:empty {
+    display: none;
+    margin: 0;
 }
 
 .outfit-modal-meta {
     color: var(--color-accent);
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-weight: 600;
     font-style: italic;
     margin-bottom: var(--spacing-md);
+    word-wrap: break-word;
 }
 
 .outfit-modal-description {
     color: var(--color-text-secondary);
     line-height: 1.8;
     font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Outfit navigation arrows */
+.outfit-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--color-white);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-md);
+    color: var(--color-text-primary);
+    opacity: 0.8;
+}
+
+.outfit-nav-btn:hover,
+.outfit-nav-btn:focus {
+    background: var(--color-accent);
+    color: var(--color-white);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.outfit-nav-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.outfit-nav-btn:disabled:hover {
+    background: var(--color-white);
+    color: var(--color-text-primary);
+    transform: translateY(-50%);
+}
+
+.outfit-nav-prev {
+    left: var(--spacing-lg);
+}
+
+.outfit-nav-next {
+    right: var(--spacing-lg);
 }
 
 /* ===========================
@@ -769,6 +859,20 @@ button:focus {
         max-width: 95vw;
         max-height: 95vh;
     }
+    
+    .outfit-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .outfit-nav-prev {
+        left: var(--spacing-sm);
+    }
+    
+    .outfit-nav-next {
+        right: var(--spacing-sm);
+    }
 }
 
 /* Small Mobile */
@@ -797,6 +901,12 @@ button:focus {
     
     .outfit-modal-image-container {
         max-height: 40vh;
+    }
+    
+    .outfit-nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
     }
 }
 
