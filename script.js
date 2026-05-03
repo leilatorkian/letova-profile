@@ -29,9 +29,9 @@ const dressData = {
     3: {
         image: 'images/dress-03.jpg',
         alt: 'Classic A-line wedding dress with embroidered details',
-        title: 'Ethereal Grace',
-        meta: '2026 • Organza & Tulle',
-        description: 'A timeless bridal gown with hand-embroidered details and a romantic A-line silhouette in pure ivory. Each embroidered motif is carefully placed to enhance the natural beauty of the wearer. This dress represents the perfect marriage of traditional craftsmanship and contemporary elegance.'
+        title: 'People',
+        meta: '2021 • Self patterned cotton & jersey',
+        description: 'A celebration of faces, gazes, and races — this collection brings human emotion to life on fabric, showing that despite our differences, love is always possible. Faces are rendered through embroidery and metal earring details, turning each piece into a wearable portrait. Crafted in self-patterned cotton and two-layered cotton-filled self-patterned jersey.'
     },
     4: {
         image: 'images/dress-04.jpg',
