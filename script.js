@@ -198,32 +198,158 @@ const collectionsData = {
         description: 'A celebration of faces, gazes, and races — this collection brings human emotion to life on fabric, showing that despite our differences, love is always possible. Faces are rendered through embroidery and metal earring details, turning each piece into a wearable portrait. Crafted in self-patterned cotton and two-layered cotton-filled self-patterned jersey.',
         outfits: [
             {
-                image: 'images/dress-03.jpg',
+                image: 'images/people-outfit1-a.jpg',
                 alt: 'People, 2021',
                 title: '',
                 meta: 'Self-patterned Cotton',
                 description: 'Embroidered faces emerge across the surface — each one unique, each one a story of emotional connection.'
             },
             {
-                image: 'images/people-outfit2.jpg',
+                image: 'images/people-outfit1-b.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Cotton & Embroidery',
+                description: 'Wearable portraits celebrating human diversity and connection through textile art.'
+            },
+            {
+                image: 'images/people-outfit1-c.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Self-patterned Jersey',
+                description: 'Faces rendered in fabric — a celebration of gazes, emotions, and shared humanity.'
+            },
+            {
+                image: 'images/people-outfit1-d.jpg',
                 alt: 'People, 2021',
                 title: '',
                 meta: 'Cotton-filled Jersey',
-                description: 'Two-layered cotton-filled self-patterned jersey with metal earring details — portraits rendered in three dimensions.'
+                description: 'Layered construction with metal earring details bringing dimension to wearable portraits.'
+            },
+            {
+                image: 'images/people-outfit1-e.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Embroidered Cotton',
+                description: 'Each embroidered face tells a story of love, connection, and the beauty of diversity.'
+            },
+            {
+                image: 'images/people-outfit1-f.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Mixed Textiles',
+                description: 'Human emotion brought to life through innovative textile techniques and embroidery.'
+            },
+            {
+                image: 'images/people-outfit1-g.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Self-patterned Cotton',
+                description: 'The final piece — a powerful statement that despite our differences, love is always possible.'
+            },
+            {
+                image: 'images/people-outfit2-a.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Cotton-filled Jersey',
+                description: 'Second outfit in the collection — wearable portraits celebrating human connection.'
+            },
+            {
+                image: 'images/people-outfit2-b.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Embroidered Cotton',
+                description: 'Metal earring details bring three-dimensional depth to embroidered faces.'
+            },
+            {
+                image: 'images/people-outfit2-c.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Self-patterned Jersey',
+                description: 'Each face tells a unique story of emotion, connection, and shared humanity.'
+            },
+            {
+                image: 'images/people-outfit2-d.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Mixed Textiles',
+                description: 'Layered construction exploring the beauty of human diversity through fabric.'
+            },
+            {
+                image: 'images/people-outfit2-e.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Cotton & Embroidery',
+                description: 'Gazes and expressions rendered through intricate textile techniques.'
+            },
+            {
+                image: 'images/people-outfit2-f.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Self-patterned Cotton',
+                description: 'Portraits in fabric — a celebration of races, emotions, and connections.'
+            },
+            {
+                image: 'images/people-outfit2-g.jpg',
+                alt: 'People, 2021',
+                title: '',
+                meta: 'Cotton-filled Jersey',
+                description: 'The final view — demonstrating that despite our differences, love is always possible.'
             }
         ]
     },
     love: {
-        title: 'Worn With Love',
-        tags: 'Sustainability · Upcycling · Genderless',
-        description: 'Upcycling is more than sustainability — it is a philosophy, an emotion, and a way of staying close to the people we love. This collection transforms old, worn garments into something new and modern, beginning with a mother\'s trenchcoat remade into a fresh silhouette with the same spirit of love and attachment at its core. Two separable pieces, joined by buttons, crafted from reclaimed materials into something made to last.',
+        title: 'Inherited Warmth',
+        tags: 'Sustainability · Upcycling · Womenswear',
+        description: 'An upcycled transformation of a mother\'s trench coat, developed during the isolation of the COVID-19 pandemic. Reconstructed into a two-piece suit with a front fastening system, the design reconfigures an existing garment while preserving its emotional resonance. Through deconstruction and reassembly, sustainability is approached as both material practice and narrative—where clothing retains intimacy, history, and connection across distance.',
         outfits: [
             {
-                image: 'images/dress-04.jpg',
-                alt: 'Worn With Love, 2020',
+                image: 'images/warmth-outfit1-a.jpg',
+                alt: 'Inherited Warmth, 2020',
+                title: '',
+                meta: 'Upcycled Trench Coat',
+                description: 'A mother\'s trench coat transformed into a two-piece suit — preserving emotional resonance through reconstruction.'
+            },
+            {
+                image: 'images/warmth-outfit1-b.jpg',
+                alt: 'Inherited Warmth, 2020',
                 title: '',
                 meta: 'Recycled Cotton & Linen',
-                description: 'Remade from a mother\'s worn trenchcoat into a modern two-piece silhouette. The seams are finished with fabric bands for durability.'
+                description: 'Developed during COVID-19 isolation — sustainability as both material practice and narrative.'
+            },
+            {
+                image: 'images/warmth-outfit1-c.jpg',
+                alt: 'Inherited Warmth, 2020',
+                title: '',
+                meta: 'Reconstructed Fabric',
+                description: 'Front fastening system reconfigures an existing garment while maintaining intimacy and history.'
+            },
+            {
+                image: 'images/warmth-outfit1-d.jpg',
+                alt: 'Inherited Warmth, 2020',
+                title: '',
+                meta: 'Upcycled Textile',
+                description: 'Deconstruction and reassembly creating connection across distance through clothing.'
+            },
+            {
+                image: 'images/warmth-outfit1-e.jpg',
+                alt: 'Inherited Warmth, 2020',
+                title: '',
+                meta: 'Recycled Trench Fabric',
+                description: 'Clothing retains intimacy — a garment that carries memory and emotional weight.'
+            },
+            {
+                image: 'images/warmth-outfit1-f.jpg',
+                alt: 'Inherited Warmth, 2020',
+                title: '',
+                meta: 'Upcycled Cotton',
+                description: 'Two-piece construction from a single inherited garment — history preserved through design.'
+            },
+            {
+                image: 'images/warmth-outfit1-g.jpg',
+                alt: 'Inherited Warmth, 2020',
+                title: '',
+                meta: 'Reconstructed Trench Coat',
+                description: 'The final view — transformation that honors the original while creating something new.'
             }
         ]
     },
@@ -247,32 +373,123 @@ const collectionsData = {
         description: 'Inspired by the everyday object — the Q-Tip. Plain, white, rhythmic in its form when massed together. The dress echoes its shape and color: crafted from a white secondhand bedcover, ironed with unorganized folds to suggest the cotton tips, and organized folds to reflect the rhythmic order of Q-Tips grouped in mass. The commonplace made extraordinary through the logic of repetition.',
         outfits: [
             {
-                image: 'images/super-outfit1.jpg',
+                image: 'images/super-outfit1-a.jpg',
                 alt: 'Supernormal, 2019',
                 title: '',
                 meta: 'Secondhand Bedcover (White Cotton)',
                 description: 'A single white secondhand bedcover, ironed into deliberate folds — form and rhythm drawn from Q-Tips grouped in mass.'
+            },
+            {
+                image: 'images/super-outfit1-b.jpg',
+                alt: 'Supernormal, 2019',
+                title: '',
+                meta: 'White Cotton',
+                description: 'The dress captures the rhythmic order of everyday objects through textile manipulation.'
+            },
+            {
+                image: 'images/super-outfit1-c.jpg',
+                alt: 'Supernormal, 2019',
+                title: '',
+                meta: 'Folded Cotton',
+                description: 'Organized folds reflect the mass-produced logic of Q-Tips — commonplace made extraordinary.'
+            },
+            {
+                image: 'images/super-outfit1-d.jpg',
+                alt: 'Supernormal, 2019',
+                title: '',
+                meta: 'Secondhand Textile',
+                description: 'Plain white fabric transformed through the poetry of repetition and deliberate form.'
+            },
+            {
+                image: 'images/super-outfit1-e.jpg',
+                alt: 'Supernormal, 2019',
+                title: '',
+                meta: 'White Cotton',
+                description: 'Unorganized folds suggest cotton tips — texture and shadow creating visual rhythm.'
+            },
+            {
+                image: 'images/super-outfit1-f.jpg',
+                alt: 'Supernormal, 2019',
+                title: '',
+                meta: 'Upcycled Bedcover',
+                description: 'The everyday elevated through intentional design inspired by ordinary objects.'
+            },
+            {
+                image: 'images/super-outfit1-g.jpg',
+                alt: 'Supernormal, 2019',
+                title: '',
+                meta: 'White Cotton',
+                description: 'Form and function meet in this exploration of the supernormal — the beauty of the banal.'
+            },
+            {
+                image: 'images/super-outfit1-h.jpg',
+                alt: 'Supernormal, 2019',
+                title: '',
+                meta: 'Secondhand Cotton',
+                description: 'The final view — white, rhythmic, simple, and extraordinary in its restraint.'
             }
         ]
     },
-    textile: {
-        title: 'Textile Design',
-        tags: 'Digital Print · Womenswear',
-        description: 'Two digital prints exploring human connection. The first — inspired by hands — captures the effect of people on each other when they touch, with overlapping forms and blending colors showing where lives meet. The second print emerges from the image of a creative mind at work: thoughts crossing and intersecting like the surface of wrinkled fabric, rendered literally as the source material for print.',
+    cocoon: {
+        title: 'Silent Cocoon',
+        tags: 'Womenswear · Conceptual',
+        description: 'An exploration of protective volume and quiet intimacy. Soft, pleated structures wrap the body in a cocoon-like silhouette, balancing fragility with control. The exaggerated neckline acts as a gentle barrier — a soft armor — creating a space of stillness and subtle isolation. Rendered in white, the design reduces form to its purest expression, where texture and volume speak louder than color.',
         outfits: [
             {
-                image: 'images/textile-outfit1.jpg',
-                alt: 'Textile Design, 2022',
+                image: 'images/cocoon-outfit1-a.jpg',
+                alt: 'Silent Cocoon, 2020',
                 title: '',
-                meta: 'Digital Print on Cotton',
-                description: 'Overlapping hand motifs with blended colors — two people, two lives, meeting at the point of touch.'
+                meta: 'Pleated White Fabric',
+                description: 'A cocoon-like silhouette wrapping the body in protective volume and quiet intimacy.'
             },
             {
-                image: 'images/textile-outfit2.jpg',
-                alt: 'Textile Design, 2022',
+                image: 'images/cocoon-outfit1-b.jpg',
+                alt: 'Silent Cocoon, 2020',
                 title: '',
-                meta: 'Digital Print on Cotton',
-                description: 'A creative mind rendered as fabric — the wrinkles of thought photographed and reprinted as pattern.'
+                meta: 'Soft Pleated Structure',
+                description: 'Balancing fragility with control through exaggerated volume and gentle forms.'
+            },
+            {
+                image: 'images/cocoon-outfit1-c.jpg',
+                alt: 'Silent Cocoon, 2020',
+                title: '',
+                meta: 'White Cotton',
+                description: 'The exaggerated neckline acts as a gentle barrier — a soft armor creating stillness.'
+            },
+            {
+                image: 'images/cocoon-outfit1-d.jpg',
+                alt: 'Silent Cocoon, 2020',
+                title: '',
+                meta: 'Textured White Fabric',
+                description: 'Pleated structures create a space of subtle isolation and protective intimacy.'
+            },
+            {
+                image: 'images/cocoon-outfit1-e.jpg',
+                alt: 'Silent Cocoon, 2020',
+                title: '',
+                meta: 'Pleated Cotton',
+                description: 'Form reduced to its purest expression — texture and volume speak louder than color.'
+            },
+            {
+                image: 'images/cocoon-outfit1-f.jpg',
+                alt: 'Silent Cocoon, 2020',
+                title: '',
+                meta: 'White Pleated Textile',
+                description: 'Soft architecture wrapping the body in layers of protective stillness.'
+            },
+            {
+                image: 'images/cocoon-outfit1-g.jpg',
+                alt: 'Silent Cocoon, 2020',
+                title: '',
+                meta: 'Structured White Fabric',
+                description: 'The cocoon silhouette balances fragility and strength in quiet harmony.'
+            },
+            {
+                image: 'images/cocoon-outfit1-h.jpg',
+                alt: 'Silent Cocoon, 2020',
+                title: '',
+                meta: 'Pleated White Cotton',
+                description: 'The final view — a space of stillness, intimacy, and soft protection rendered in white.'
             }
         ]
     }
