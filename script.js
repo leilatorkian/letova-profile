@@ -147,6 +147,62 @@ const collectionsData = {
                 title: '',
                 meta: 'Wool & Mesh',
                 description: 'The essence of freedom captured in textile form.'
+            },
+            {
+                image: 'images/fear-outfit6-a.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'An adaptive survival jacket developed for changing environmental conditions. The design allows transformation into a vest, incorporates an oxygen-carrying system, and protects the wearer from harsh elements such as wind and sand. A balance between technical function and wearable design.'
+            },
+            {
+                image: 'images/fear-outfit6-b.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'Modular construction allows the wearer to adapt to diverse environmental challenges.'
+            },
+            {
+                image: 'images/fear-outfit6-c.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'Detail view of the oxygen-carrying system integrated into the garment design.'
+            },
+            {
+                image: 'images/fear-outfit6-d.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'Protection from wind and sand through innovative textile engineering.'
+            },
+            {
+                image: 'images/fear-outfit6-e.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'Transformation sequence showing the jacket adapting to vest configuration.'
+            },
+            {
+                image: 'images/fear-outfit6-f.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'Technical details highlighting the functional elements of the survival system.'
+            },
+            {
+                image: 'images/fear-outfit6-g.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'Full view of the adaptive system in harsh environmental conditions.'
+            },
+            {
+                image: 'images/fear-outfit6-h.jpg',
+                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
+                title: 'Multi-Functional Survival System',
+                meta: 'Technical Outerwear',
+                description: 'The final expression of survival design — where function meets fearless innovation.'
             }
         ]
     },
