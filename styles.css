@@ -253,10 +253,10 @@ button:focus {
 
 .collections-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-xxl);
-    justify-items: center;
+    justify-content: center;
     align-items: start;
 }
 
@@ -267,9 +267,8 @@ button:focus {
     overflow: hidden;
     transition: transform var(--transition-medium), box-shadow var(--transition-medium);
     cursor: pointer;
-    width: 320px;
-    max-width: 100%;
-    place-self: center;
+    width: 100%;
+    height: 100%;
     transform-origin: center center;
     display: flex;
     flex-direction: column;
@@ -459,9 +458,9 @@ button:focus {
 /* Gallery inside modal */
 .collection-modal-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
     gap: var(--spacing-lg);
-    justify-items: center;
+    justify-content: center;
     align-items: start;
 }
 
@@ -471,9 +470,8 @@ button:focus {
     overflow: hidden;
     transition: transform var(--transition-medium), box-shadow var(--transition-medium);
     cursor: pointer;
-    width: 250px;
-    max-width: 100%;
-    place-self: center;
+    width: 100%;
+    height: 100%;
     transform-origin: center center;
     display: flex;
     flex-direction: column;
