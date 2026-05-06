@@ -6,7 +6,7 @@ const collectionsData = {
     fear: {
         title: 'Fear Into Freedom',
         tags: 'Genderless · Womenswear',
-        description: 'A wearable manifesto against fear. The feeling of fear opposes freedom — the greater the fear, the further one is from personal liberty. Inspired by the Iranian people\'s courage in fighting for their rights, this collection visualizes fear and translates it into textile. The color palette — pink, green, and grey — speaks to protest, hope, and exhaustion. Both feminine and unisex, the collection dismantles false gender stereotypes as it dismantles fear itself.',
+        description: 'A wearable manifesto against fear. The feeling of fear opposes freedom — the greater the fear, the further one is from personal liberty. Inspired by courage in fighting for freedom, this collection visualizes fear and translates it into textile. The color palette — pink, green, and grey — speaks to protest, hope, and exhaustion. Both feminine and unisex, the collection dismantles false gender stereotypes as it dismantles fear itself.',
         outfits: [
             {
                 image: 'images/fear-outfit1-a.jpg',
@@ -209,7 +209,7 @@ const collectionsData = {
     worlds: {
         title: 'Between Worlds',
         tags: 'Sportswear · Menswear · Genderless',
-        description: 'A study in contrast, asymmetric forms and shifting grey tones inspired by the natural landscapes of Iran, where opposites meet in quiet harmony. The concept references the contrast that exists everywhere — between social levels, genders, in nature, and in different thoughts. Asymmetry of form and a harmonic combination of light and dark shades give shape to this duality.',
+        description: 'A study in contrast, asymmetric forms and shifting grey tones inspired by natural landscapes, where opposites meet in quiet harmony. The concept references the contrast that exists everywhere — between social levels, genders, in nature, and in different thoughts. Asymmetry of form and a harmonic combination of light and dark shades give shape to this duality.',
         outfits: [
             {
                 image: 'images/worlds-outfit1-a.jpg',
