@@ -531,6 +531,46 @@ button:focus {
     line-height: 1.6;
 }
 
+/* Sub-outfit card styling */
+.sub-outfit-card .modal-outfit-info {
+    padding: var(--spacing-md);
+}
+
+.sub-outfit-card .modal-outfit-title {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* Back button for sub-outfit navigation */
+.back-to-collection-btn {
+    grid-column: 1 / -1;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition-medium), transform var(--transition-fast);
+    font-family: var(--font-body);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.back-to-collection-btn:hover {
+    background: #6F5A44;
+    transform: translateX(-4px);
+}
+
+.back-to-collection-btn:active {
+    transform: translateX(-2px);
+}
+
 /* ===========================
    Outfit Detail Modal
    =========================== */

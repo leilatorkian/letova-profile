@@ -3,207 +3,46 @@
 // ===========================
 
 const collectionsData = {
+    survival: {
+        title: 'Multi-Functional Survival System',
+        tags: 'Technical Outerwear · Genderless',
+        description: 'An adaptive survival jacket developed for changing environmental conditions. The design allows transformation into a vest, incorporates an oxygen-carrying system, and protects the wearer from harsh elements such as wind and sand. A balance between technical function and wearable design — where innovation meets necessity.',
+        outfits: [
+            { image: 'images/fear-outfit6-a.jpg', alt: 'Multi-Functional Survival System, 2025' },
+            { image: 'images/fear-outfit6-b.jpg', alt: 'Multi-Functional Survival System, 2025' },
+            { image: 'images/fear-outfit6-c.jpg', alt: 'Multi-Functional Survival System, 2025' },
+            { image: 'images/fear-outfit6-d.jpg', alt: 'Multi-Functional Survival System, 2025' },
+            { image: 'images/fear-outfit6-e.jpg', alt: 'Multi-Functional Survival System, 2025' },
+            { image: 'images/fear-outfit6-f.jpg', alt: 'Multi-Functional Survival System, 2025' },
+            { image: 'images/fear-outfit6-g.jpg', alt: 'Multi-Functional Survival System, 2025' },
+            { image: 'images/fear-outfit6-h.jpg', alt: 'Multi-Functional Survival System, 2025' }
+        ]
+    },
     fear: {
         title: 'Fear Into Freedom',
         tags: 'Genderless · Womenswear',
         description: 'A wearable manifesto against fear. The feeling of fear opposes freedom — the greater the fear, the further one is from personal liberty. Inspired by the people\'s courage in fighting for their rights across the world, this collection visualizes fear and translates it into textile. The color palette — pink, green, and grey — speaks to protest, hope, and exhaustion. Both feminine and unisex, the collection dismantles false gender stereotypes as it dismantles fear itself.',
         outfits: [
-            {
-                image: 'images/fear-outfit1-a.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Neoprene & Wool',
-                description: 'Structured neoprene silhouette with wool detail — designed for those who dare to fight for freedom.'
-            },
-            {
-                image: 'images/fear-outfit1-b.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Rib Jersey & Air Mesh',
-                description: 'Layered jersey and mesh construction evoking movement and vulnerability, set against a grey ground.'
-            },
-            {
-                image: 'images/fear-outfit1-c.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Reflective Fabric & Felt',
-                description: 'Reflective surfaces confront the viewer — a mirror of society\'s gaze turned back on itself.'
-            },
-            {
-                image: 'images/fear-outfit1-d.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Faux Fur & Wool',
-                description: 'Softness as defiance — faux fur textures merge with structured wool to challenge what tenderness means.'
-            },
-            {
-                image: 'images/fear-outfit1-e.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Neoprene & Rib Jersey',
-                description: 'Pink as protest: historically a color of resistance, recast here in clean neoprene lines.'
-            },
-            {
-                image: 'images/fear-outfit1-f.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Wool & Air Mesh',
-                description: 'The closing piece — green for hope, grey for struggle, worn together as one.'
-            },
-            {
-                image: 'images/fear-outfit2-a.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Cotton & Mesh',
-                description: 'Second outfit in the collection — continuing the exploration of fear transformed into freedom.'
-            },
-            {
-                image: 'images/fear-outfit2-b.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Jersey & Wool',
-                description: 'Layered construction exploring the tension between protection and exposure.'
-            },
-            {
-                image: 'images/fear-outfit2-c.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Neoprene & Cotton',
-                description: 'Bold silhouette that challenges conventional notions of strength and vulnerability.'
-            },
-            {
-                image: 'images/fear-outfit2-d.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Mixed Textiles',
-                description: 'A harmonious blend of textures representing the complexity of the human spirit.'
-            },
-            {
-                image: 'images/fear-outfit2-e.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Wool & Synthetic',
-                description: 'The final view — capturing movement, resistance, and the path to liberation.'
-            },
-            {
-                image: 'images/fear-outfit3-a.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Cotton & Neoprene',
-                description: 'Third outfit in the collection — continuing the exploration of freedom through design.'
-            },
-            {
-                image: 'images/fear-outfit3-b.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Mixed Fabrics',
-                description: 'Innovative textile combinations that speak to resilience and transformation.'
-            },
-            {
-                image: 'images/fear-outfit3-c.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Wool & Mesh',
-                description: 'A powerful statement of strength and vulnerability woven together.'
-            },
-            {
-                image: 'images/fear-outfit4-a.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Neoprene & Cotton',
-                description: 'Fourth outfit in the collection — bold forms that challenge and inspire.'
-            },
-            {
-                image: 'images/fear-outfit4-b.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Mixed Textiles',
-                description: 'Dynamic silhouettes exploring the intersection of fear and freedom.'
-            },
-            {
-                image: 'images/fear-outfit4-c.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Wool & Synthetic',
-                description: 'A celebration of courage through innovative textile design.'
-            },
-            {
-                image: 'images/fear-outfit5-a.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Cotton & Neoprene',
-                description: 'Fifth outfit in the collection — a powerful exploration of freedom and identity.'
-            },
-            {
-                image: 'images/fear-outfit5-b.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Mixed Fabrics',
-                description: 'Innovative construction that speaks to resilience and transformation.'
-            },
-            {
-                image: 'images/fear-outfit5-c.jpg',
-                alt: 'Fear Into Freedom, 2023',
-                title: '',
-                meta: 'Wool & Mesh',
-                description: 'The essence of freedom captured in textile form.'
-            },
-            {
-                image: 'images/fear-outfit6-a.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'An adaptive survival jacket developed for changing environmental conditions. The design allows transformation into a vest, incorporates an oxygen-carrying system, and protects the wearer from harsh elements such as wind and sand. A balance between technical function and wearable design.'
-            },
-            {
-                image: 'images/fear-outfit6-b.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'Modular construction allows the wearer to adapt to diverse environmental challenges.'
-            },
-            {
-                image: 'images/fear-outfit6-c.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'Detail view of the oxygen-carrying system integrated into the garment design.'
-            },
-            {
-                image: 'images/fear-outfit6-d.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'Protection from wind and sand through innovative textile engineering.'
-            },
-            {
-                image: 'images/fear-outfit6-e.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'Transformation sequence showing the jacket adapting to vest configuration.'
-            },
-            {
-                image: 'images/fear-outfit6-f.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'Technical details highlighting the functional elements of the survival system.'
-            },
-            {
-                image: 'images/fear-outfit6-g.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'Full view of the adaptive system in harsh environmental conditions.'
-            },
-            {
-                image: 'images/fear-outfit6-h.jpg',
-                alt: 'Fear Into Freedom - Multi-Functional Survival System, 2023',
-                title: 'Multi-Functional Survival System',
-                meta: 'Technical Outerwear',
-                description: 'The final expression of survival design — where function meets fearless innovation.'
-            }
+            { image: 'images/fear-outfit1-a.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit1-b.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit1-c.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit1-d.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit1-e.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit1-f.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit2-a.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit2-b.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit2-c.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit2-d.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit2-e.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit3-a.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit3-b.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit3-c.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit4-a.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit4-b.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit4-c.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit5-a.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit5-b.jpg', alt: 'Fear Into Freedom, 2023' },
+            { image: 'images/fear-outfit5-c.jpg', alt: 'Fear Into Freedom, 2023' }
         ]
     },
     worlds: {
@@ -211,145 +50,44 @@ const collectionsData = {
         tags: 'Sportswear · Menswear · Genderless',
         description: 'A study in contrast, asymmetric forms and shifting grey tones inspired by the natural landscapes of Iran, where opposites meet in quiet harmony. The concept references the contrast that exists everywhere — between social levels, genders, in nature, and in different thoughts. Asymmetry of form and a harmonic combination of light and dark shades give shape to this duality.',
         outfits: [
-            {
-                image: 'images/worlds-outfit1-a.jpg',
-                alt: 'Between Worlds, 2022',
-                title: '',
-                meta: 'Cashmere & Wool',
-                description: 'Asymmetric coat in cashmere and wool paired with an asymmetric jumpsuit in cotton and wool — both wearable from either side.'
-            },
-            {
-                image: 'images/worlds-outfit1-b.jpg',
-                alt: 'Between Worlds, 2022',
-                title: '',
-                meta: 'Cotton & Cashmere',
-                description: 'Asymmetric trousers in cotton paired with a hoody featuring two different sleeves, and a cashmere-wool vest fastened with a buttoned waistband.'
-            },
-            {
-                image: 'images/worlds-outfit1-c.jpg',
-                alt: 'Between Worlds, 2022',
-                title: '',
-                meta: 'Wool & Silk',
-                description: 'A harmonious blend of contrasting textures and asymmetric forms, reflecting the duality found in nature and design.'
-            },
-            {
-                image: 'images/worlds-outfit1-d.jpg',
-                alt: 'Between Worlds, 2022',
-                title: '',
-                meta: 'Wool & Cashmere',
-                description: 'Layered asymmetric design exploring the contrast between light and dark, structure and fluidity.'
-            },
-            {
-                image: 'images/worlds-outfit1-e.jpg',
-                alt: 'Between Worlds, 2022',
-                title: '',
-                meta: 'Cotton & Silk',
-                description: 'The final piece of the collection — bringing together all contrasts in harmonious balance.'
-            }
+            { image: 'images/worlds-outfit1-a.jpg', alt: 'Between Worlds, 2022' },
+            { image: 'images/worlds-outfit1-b.jpg', alt: 'Between Worlds, 2022' },
+            { image: 'images/worlds-outfit1-c.jpg', alt: 'Between Worlds, 2022' },
+            { image: 'images/worlds-outfit1-d.jpg', alt: 'Between Worlds, 2022' },
+            { image: 'images/worlds-outfit1-e.jpg', alt: 'Between Worlds, 2022' }
         ]
     },
     people: {
         title: 'People',
         tags: 'Creative Identity · Womenswear',
         description: 'A celebration of faces, gazes, and races — this collection brings human emotion to life on fabric, showing that despite our differences, love is always possible. Faces are rendered through embroidery and metal earring details, turning each piece into a wearable portrait. Crafted in self-patterned cotton and two-layered cotton-filled self-patterned jersey.',
-        outfits: [
+        hasSubOutfits: true,
+        subOutfits: [
             {
-                image: 'images/people-outfit1-a.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Self-patterned Cotton',
-                description: 'Embroidered faces emerge across the surface — each one unique, each one a story of emotional connection.'
+                title: 'Outfit 1',
+                heroImage: 'images/people-outfit1-a.jpg',
+                images: [
+                    { image: 'images/people-outfit1-a.jpg', alt: 'People - Outfit 1, 2021' },
+                    { image: 'images/people-outfit1-b.jpg', alt: 'People - Outfit 1, 2021' },
+                    { image: 'images/people-outfit1-c.jpg', alt: 'People - Outfit 1, 2021' },
+                    { image: 'images/people-outfit1-d.jpg', alt: 'People - Outfit 1, 2021' },
+                    { image: 'images/people-outfit1-e.jpg', alt: 'People - Outfit 1, 2021' },
+                    { image: 'images/people-outfit1-f.jpg', alt: 'People - Outfit 1, 2021' },
+                    { image: 'images/people-outfit1-g.jpg', alt: 'People - Outfit 1, 2021' }
+                ]
             },
             {
-                image: 'images/people-outfit1-b.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Cotton & Embroidery',
-                description: 'Wearable portraits celebrating human diversity and connection through textile art.'
-            },
-            {
-                image: 'images/people-outfit1-c.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Self-patterned Jersey',
-                description: 'Faces rendered in fabric — a celebration of gazes, emotions, and shared humanity.'
-            },
-            {
-                image: 'images/people-outfit1-d.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Cotton-filled Jersey',
-                description: 'Layered construction with metal earring details bringing dimension to wearable portraits.'
-            },
-            {
-                image: 'images/people-outfit1-e.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Embroidered Cotton',
-                description: 'Each embroidered face tells a story of love, connection, and the beauty of diversity.'
-            },
-            {
-                image: 'images/people-outfit1-f.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Mixed Textiles',
-                description: 'Human emotion brought to life through innovative textile techniques and embroidery.'
-            },
-            {
-                image: 'images/people-outfit1-g.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Self-patterned Cotton',
-                description: 'The final piece — a powerful statement that despite our differences, love is always possible.'
-            },
-            {
-                image: 'images/people-outfit2-a.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Cotton-filled Jersey',
-                description: 'Second outfit in the collection — wearable portraits celebrating human connection.'
-            },
-            {
-                image: 'images/people-outfit2-b.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Embroidered Cotton',
-                description: 'Metal earring details bring three-dimensional depth to embroidered faces.'
-            },
-            {
-                image: 'images/people-outfit2-c.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Self-patterned Jersey',
-                description: 'Each face tells a unique story of emotion, connection, and shared humanity.'
-            },
-            {
-                image: 'images/people-outfit2-d.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Mixed Textiles',
-                description: 'Layered construction exploring the beauty of human diversity through fabric.'
-            },
-            {
-                image: 'images/people-outfit2-e.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Cotton & Embroidery',
-                description: 'Gazes and expressions rendered through intricate textile techniques.'
-            },
-            {
-                image: 'images/people-outfit2-f.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Self-patterned Cotton',
-                description: 'Portraits in fabric — a celebration of races, emotions, and connections.'
-            },
-            {
-                image: 'images/people-outfit2-g.jpg',
-                alt: 'People, 2021',
-                title: '',
-                meta: 'Cotton-filled Jersey',
-                description: 'The final view — demonstrating that despite our differences, love is always possible.'
+                title: 'Outfit 2',
+                heroImage: 'images/people-outfit2-a.jpg',
+                images: [
+                    { image: 'images/people-outfit2-a.jpg', alt: 'People - Outfit 2, 2021' },
+                    { image: 'images/people-outfit2-b.jpg', alt: 'People - Outfit 2, 2021' },
+                    { image: 'images/people-outfit2-c.jpg', alt: 'People - Outfit 2, 2021' },
+                    { image: 'images/people-outfit2-d.jpg', alt: 'People - Outfit 2, 2021' },
+                    { image: 'images/people-outfit2-e.jpg', alt: 'People - Outfit 2, 2021' },
+                    { image: 'images/people-outfit2-f.jpg', alt: 'People - Outfit 2, 2021' },
+                    { image: 'images/people-outfit2-g.jpg', alt: 'People - Outfit 2, 2021' }
+                ]
             }
         ]
     },
@@ -358,118 +96,28 @@ const collectionsData = {
         tags: 'Sustainability · Upcycling · Womenswear',
         description: 'An upcycled transformation of a mother\'s trench coat, developed during the isolation of the COVID-19 pandemic. Reconstructed into a two-piece suit with a front fastening system, the design reconfigures an existing garment while preserving its emotional resonance. Through deconstruction and reassembly, sustainability is approached as both material practice and narrative—where clothing retains intimacy, history, and connection across distance.',
         outfits: [
-            {
-                image: 'images/warmth-outfit1-a.jpg',
-                alt: 'Inherited Warmth, 2020',
-                title: '',
-                meta: 'Upcycled Trench Coat',
-                description: 'A mother\'s trench coat transformed into a two-piece suit — preserving emotional resonance through reconstruction.'
-            },
-            {
-                image: 'images/warmth-outfit1-b.jpg',
-                alt: 'Inherited Warmth, 2020',
-                title: '',
-                meta: 'Recycled Cotton & Linen',
-                description: 'Developed during COVID-19 isolation — sustainability as both material practice and narrative.'
-            },
-            {
-                image: 'images/warmth-outfit1-c.jpg',
-                alt: 'Inherited Warmth, 2020',
-                title: '',
-                meta: 'Reconstructed Fabric',
-                description: 'Front fastening system reconfigures an existing garment while maintaining intimacy and history.'
-            },
-            {
-                image: 'images/warmth-outfit1-d.jpg',
-                alt: 'Inherited Warmth, 2020',
-                title: '',
-                meta: 'Upcycled Textile',
-                description: 'Deconstruction and reassembly creating connection across distance through clothing.'
-            },
-            {
-                image: 'images/warmth-outfit1-e.jpg',
-                alt: 'Inherited Warmth, 2020',
-                title: '',
-                meta: 'Recycled Trench Fabric',
-                description: 'Clothing retains intimacy — a garment that carries memory and emotional weight.'
-            },
-            {
-                image: 'images/warmth-outfit1-f.jpg',
-                alt: 'Inherited Warmth, 2020',
-                title: '',
-                meta: 'Upcycled Cotton',
-                description: 'Two-piece construction from a single inherited garment — history preserved through design.'
-            },
-            {
-                image: 'images/warmth-outfit1-g.jpg',
-                alt: 'Inherited Warmth, 2020',
-                title: '',
-                meta: 'Reconstructed Trench Coat',
-                description: 'The final view — transformation that honors the original while creating something new.'
-            }
+            { image: 'images/warmth-outfit1-a.jpg', alt: 'Inherited Warmth, 2020' },
+            { image: 'images/warmth-outfit1-b.jpg', alt: 'Inherited Warmth, 2020' },
+            { image: 'images/warmth-outfit1-c.jpg', alt: 'Inherited Warmth, 2020' },
+            { image: 'images/warmth-outfit1-d.jpg', alt: 'Inherited Warmth, 2020' },
+            { image: 'images/warmth-outfit1-e.jpg', alt: 'Inherited Warmth, 2020' },
+            { image: 'images/warmth-outfit1-f.jpg', alt: 'Inherited Warmth, 2020' },
+            { image: 'images/warmth-outfit1-g.jpg', alt: 'Inherited Warmth, 2020' }
         ]
     },
-    super: {
-        title: 'Supernormal',
+    sacred: {
+        title: 'Sacred Asymmetry',
         tags: 'Womenswear',
-        description: 'Inspired by the everyday object — the Q-Tip. Plain, white, rhythmic in its form when massed together. The dress echoes its shape and color: crafted from a white secondhand bedcover, ironed with unorganized folds to suggest the cotton tips, and organized folds to reflect the rhythmic order of Q-Tips grouped in mass. The commonplace made extraordinary through the logic of repetition.',
+        description: 'An exploration of ritual, protection, and cultural memory through asymmetric form. Traditional ornamental references are reinterpreted into a contemporary silhouette, where geometric textile patterns meet raw, instinctive construction. The face covering acts as both concealment and identity — a symbolic object balancing mystery, protection, and presence. Contrasts between structure and wildness create a garment suspended between heritage and modernity.',
         outfits: [
-            {
-                image: 'images/super-outfit1-a.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'Secondhand Bedcover (White Cotton)',
-                description: 'A single white secondhand bedcover, ironed into deliberate folds — form and rhythm drawn from Q-Tips grouped in mass.'
-            },
-            {
-                image: 'images/super-outfit1-b.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'White Cotton',
-                description: 'The dress captures the rhythmic order of everyday objects through textile manipulation.'
-            },
-            {
-                image: 'images/super-outfit1-c.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'Folded Cotton',
-                description: 'Organized folds reflect the mass-produced logic of Q-Tips — commonplace made extraordinary.'
-            },
-            {
-                image: 'images/super-outfit1-d.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'Secondhand Textile',
-                description: 'Plain white fabric transformed through the poetry of repetition and deliberate form.'
-            },
-            {
-                image: 'images/super-outfit1-e.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'White Cotton',
-                description: 'Unorganized folds suggest cotton tips — texture and shadow creating visual rhythm.'
-            },
-            {
-                image: 'images/super-outfit1-f.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'Upcycled Bedcover',
-                description: 'The everyday elevated through intentional design inspired by ordinary objects.'
-            },
-            {
-                image: 'images/super-outfit1-g.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'White Cotton',
-                description: 'Form and function meet in this exploration of the supernormal — the beauty of the banal.'
-            },
-            {
-                image: 'images/super-outfit1-h.jpg',
-                alt: 'Supernormal, 2019',
-                title: '',
-                meta: 'Secondhand Cotton',
-                description: 'The final view — white, rhythmic, simple, and extraordinary in its restraint.'
-            }
+            { image: 'images/sacred-outfit1-a.jpg', alt: 'Sacred Asymmetry, 2020' },
+            { image: 'images/sacred-outfit1-b.jpg', alt: 'Sacred Asymmetry, 2020' },
+            { image: 'images/sacred-outfit1-c.jpg', alt: 'Sacred Asymmetry, 2020' },
+            { image: 'images/sacred-outfit1-d.jpg', alt: 'Sacred Asymmetry, 2020' },
+            { image: 'images/sacred-outfit1-e.jpg', alt: 'Sacred Asymmetry, 2020' },
+            { image: 'images/sacred-outfit1-f.jpg', alt: 'Sacred Asymmetry, 2020' },
+            { image: 'images/sacred-outfit1-g.jpg', alt: 'Sacred Asymmetry, 2020' },
+            { image: 'images/sacred-outfit1-h.jpg', alt: 'Sacred Asymmetry, 2020' }
         ]
     },
     cocoon: {
@@ -477,62 +125,14 @@ const collectionsData = {
         tags: 'Womenswear · Conceptual',
         description: 'An exploration of protective volume and quiet intimacy. Soft, pleated structures wrap the body in a cocoon-like silhouette, balancing fragility with control. The exaggerated neckline acts as a gentle barrier — a soft armor — creating a space of stillness and subtle isolation. Rendered in white, the design reduces form to its purest expression, where texture and volume speak louder than color.',
         outfits: [
-            {
-                image: 'images/cocoon-outfit1-a.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'Pleated White Fabric',
-                description: 'A cocoon-like silhouette wrapping the body in protective volume and quiet intimacy.'
-            },
-            {
-                image: 'images/cocoon-outfit1-b.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'Soft Pleated Structure',
-                description: 'Balancing fragility with control through exaggerated volume and gentle forms.'
-            },
-            {
-                image: 'images/cocoon-outfit1-c.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'White Cotton',
-                description: 'The exaggerated neckline acts as a gentle barrier — a soft armor creating stillness.'
-            },
-            {
-                image: 'images/cocoon-outfit1-d.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'Textured White Fabric',
-                description: 'Pleated structures create a space of subtle isolation and protective intimacy.'
-            },
-            {
-                image: 'images/cocoon-outfit1-e.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'Pleated Cotton',
-                description: 'Form reduced to its purest expression — texture and volume speak louder than color.'
-            },
-            {
-                image: 'images/cocoon-outfit1-f.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'White Pleated Textile',
-                description: 'Soft architecture wrapping the body in layers of protective stillness.'
-            },
-            {
-                image: 'images/cocoon-outfit1-g.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'Structured White Fabric',
-                description: 'The cocoon silhouette balances fragility and strength in quiet harmony.'
-            },
-            {
-                image: 'images/cocoon-outfit1-h.jpg',
-                alt: 'Silent Cocoon, 2020',
-                title: '',
-                meta: 'Pleated White Cotton',
-                description: 'The final view — a space of stillness, intimacy, and soft protection rendered in white.'
-            }
+            { image: 'images/cocoon-outfit1-a.jpg', alt: 'Silent Cocoon, 2019' },
+            { image: 'images/cocoon-outfit1-b.jpg', alt: 'Silent Cocoon, 2019' },
+            { image: 'images/cocoon-outfit1-c.jpg', alt: 'Silent Cocoon, 2019' },
+            { image: 'images/cocoon-outfit1-d.jpg', alt: 'Silent Cocoon, 2019' },
+            { image: 'images/cocoon-outfit1-e.jpg', alt: 'Silent Cocoon, 2019' },
+            { image: 'images/cocoon-outfit1-f.jpg', alt: 'Silent Cocoon, 2019' },
+            { image: 'images/cocoon-outfit1-g.jpg', alt: 'Silent Cocoon, 2019' },
+            { image: 'images/cocoon-outfit1-h.jpg', alt: 'Silent Cocoon, 2019' }
         ]
     }
 };
@@ -561,6 +161,7 @@ const outfitNavNext = document.querySelector('.outfit-nav-next');
 // Track current collection and outfit
 let currentCollectionId = null;
 let currentOutfitIndex = 0;
+let currentSubOutfitIndex = null; // For collections with sub-outfits
 
 // Open Collection Modal
 function openCollectionModal(collectionId) {
@@ -571,6 +172,7 @@ function openCollectionModal(collectionId) {
     // Store current collection
     currentCollectionId = collectionId;
     currentOutfitIndex = 0;
+    currentSubOutfitIndex = null;
     
     // Set modal header
     collectionModalTitle.textContent = collection.title;
@@ -580,30 +182,132 @@ function openCollectionModal(collectionId) {
     // Clear and populate gallery
     collectionModalGallery.innerHTML = '';
     
-    collection.outfits.forEach((outfit, index) => {
+    // Check if this collection has sub-outfits (nested structure)
+    if (collection.hasSubOutfits && collection.subOutfits) {
+        // Show sub-outfit hero images
+        collection.subOutfits.forEach((subOutfit, index) => {
+            const outfitCard = document.createElement('article');
+            outfitCard.className = 'modal-outfit-card sub-outfit-card';
+            outfitCard.dataset.subOutfitIndex = index;
+            outfitCard.dataset.collectionId = collectionId;
+            
+            outfitCard.innerHTML = `
+                <div class="modal-outfit-image-wrapper">
+                    <img src="${subOutfit.heroImage}" 
+                         alt="${collection.title} - ${subOutfit.title}" 
+                         class="modal-outfit-image"
+                         loading="lazy">
+                </div>
+                <div class="modal-outfit-info">
+                    <h4 class="modal-outfit-title">${subOutfit.title}</h4>
+                </div>
+            `;
+            
+            // Add click handler to open sub-outfit gallery
+            outfitCard.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openSubOutfitGallery(collectionId, index);
+            });
+            
+            // Keyboard accessibility
+            outfitCard.setAttribute('tabindex', '0');
+            outfitCard.setAttribute('role', 'button');
+            outfitCard.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openSubOutfitGallery(collectionId, index);
+                }
+            });
+            
+            collectionModalGallery.appendChild(outfitCard);
+        });
+    } else {
+        // Regular collection - show all outfits
+        collection.outfits.forEach((outfit, index) => {
+            const outfitCard = document.createElement('article');
+            outfitCard.className = 'modal-outfit-card';
+            outfitCard.dataset.outfitIndex = index;
+            outfitCard.dataset.collectionId = collectionId;
+            
+            outfitCard.innerHTML = `
+                <div class="modal-outfit-image-wrapper">
+                    <img src="${outfit.image}" 
+                         alt="${outfit.alt}" 
+                         class="modal-outfit-image"
+                         loading="lazy">
+                </div>
+            `;
+            
+            // Add click handler to open outfit detail modal
+            outfitCard.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openOutfitModal(collectionId, index);
+            });
+            
+            // Keyboard accessibility
+            outfitCard.setAttribute('tabindex', '0');
+            outfitCard.setAttribute('role', 'button');
+            outfitCard.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openOutfitModal(collectionId, index);
+                }
+            });
+            
+            collectionModalGallery.appendChild(outfitCard);
+        });
+    }
+    
+    // Show modal
+    collectionModal.showModal();
+    
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+}
+
+// Open Sub-Outfit Gallery (for collections with nested outfits)
+function openSubOutfitGallery(collectionId, subOutfitIndex) {
+    const collection = collectionsData[collectionId];
+    
+    if (!collection || !collection.subOutfits || !collection.subOutfits[subOutfitIndex]) return;
+    
+    currentSubOutfitIndex = subOutfitIndex;
+    const subOutfit = collection.subOutfits[subOutfitIndex];
+    
+    // Clear and repopulate gallery with sub-outfit images
+    collectionModalGallery.innerHTML = '';
+    
+    // Add back button
+    const backButton = document.createElement('button');
+    backButton.className = 'back-to-collection-btn';
+    backButton.innerHTML = '← Back to Collection';
+    backButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openCollectionModal(collectionId); // Re-open collection to show sub-outfits again
+    });
+    collectionModalGallery.appendChild(backButton);
+    
+    // Show all images for this sub-outfit
+    subOutfit.images.forEach((imageData, index) => {
         const outfitCard = document.createElement('article');
         outfitCard.className = 'modal-outfit-card';
         outfitCard.dataset.outfitIndex = index;
-        outfitCard.dataset.collectionId = collectionId;
         
         outfitCard.innerHTML = `
             <div class="modal-outfit-image-wrapper">
-                <img src="${outfit.image}" 
-                     alt="${outfit.alt}" 
+                <img src="${imageData.image}" 
+                     alt="${imageData.alt}" 
                      class="modal-outfit-image"
                      loading="lazy">
-            </div>
-            <div class="modal-outfit-info">
-                <h4 class="modal-outfit-title">${outfit.title}</h4>
-                <p class="modal-outfit-meta">${outfit.meta}</p>
-                <p class="modal-outfit-description">${outfit.description}</p>
             </div>
         `;
         
         // Add click handler to open outfit detail modal
         outfitCard.addEventListener('click', (e) => {
             e.stopPropagation();
-            openOutfitModal(collectionId, index);
+            openSubOutfitImageModal(collectionId, subOutfitIndex, index);
         });
         
         // Keyboard accessibility
@@ -613,18 +317,78 @@ function openCollectionModal(collectionId) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 e.stopPropagation();
-                openOutfitModal(collectionId, index);
+                openSubOutfitImageModal(collectionId, subOutfitIndex, index);
             }
         });
         
         collectionModalGallery.appendChild(outfitCard);
     });
+}
+
+// Open individual image from sub-outfit
+function openSubOutfitImageModal(collectionId, subOutfitIndex, imageIndex) {
+    const collection = collectionsData[collectionId];
+    
+    if (!collection || !collection.subOutfits || !collection.subOutfits[subOutfitIndex]) return;
+    
+    const subOutfit = collection.subOutfits[subOutfitIndex];
+    const images = subOutfit.images;
+    
+    if (!images[imageIndex]) return;
+    
+    currentOutfitIndex = imageIndex;
+    
+    const imageData = images[imageIndex];
+    
+    // Set modal content
+    outfitModalImage.src = imageData.image;
+    outfitModalImage.alt = imageData.alt;
+    
+    // Hide text elements
+    outfitModalTitle.style.display = 'none';
+    outfitModalMeta.style.display = 'none';
+    outfitModalDescription.style.display = 'none';
+    
+    // Update navigation buttons for sub-outfit context
+    updateNavButtonsForSubOutfit(images.length);
+    
+    // Override navigation to work within sub-outfit
+    outfitNavPrev.onclick = () => navigateSubOutfitImage(collectionId, subOutfitIndex, -1);
+    outfitNavNext.onclick = () => navigateSubOutfitImage(collectionId, subOutfitIndex, 1);
     
     // Show modal
-    collectionModal.showModal();
+    outfitModal.showModal();
+}
+
+// Navigate within sub-outfit images
+function navigateSubOutfitImage(collectionId, subOutfitIndex, direction) {
+    const collection = collectionsData[collectionId];
+    const subOutfit = collection.subOutfits[subOutfitIndex];
+    const images = subOutfit.images;
     
-    // Prevent body scroll when modal is open
-    document.body.style.overflow = 'hidden';
+    currentOutfitIndex += direction;
+    
+    if (currentOutfitIndex < 0) {
+        currentOutfitIndex = images.length - 1;
+    } else if (currentOutfitIndex >= images.length) {
+        currentOutfitIndex = 0;
+    }
+    
+    openSubOutfitImageModal(collectionId, subOutfitIndex, currentOutfitIndex);
+}
+
+// Update navigation buttons for sub-outfit
+function updateNavButtonsForSubOutfit(totalImages) {
+    outfitNavPrev.disabled = false;
+    outfitNavNext.disabled = false;
+    
+    if (totalImages <= 1) {
+        outfitNavPrev.style.display = 'none';
+        outfitNavNext.style.display = 'none';
+    } else {
+        outfitNavPrev.style.display = 'flex';
+        outfitNavNext.style.display = 'flex';
+    }
 }
 
 // Close Collection Modal
@@ -654,9 +418,11 @@ function openOutfitModal(collectionId, outfitIndex) {
     // Set modal content
     outfitModalImage.src = outfit.image;
     outfitModalImage.alt = outfit.alt;
-    outfitModalTitle.textContent = outfit.title;
-    outfitModalMeta.textContent = outfit.meta;
-    outfitModalDescription.textContent = outfit.description;
+    
+    // Hide text elements since outfits no longer have detailed descriptions
+    outfitModalTitle.style.display = 'none';
+    outfitModalMeta.style.display = 'none';
+    outfitModalDescription.style.display = 'none';
     
     // Update navigation buttons
     updateNavButtons();
