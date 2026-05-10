@@ -409,20 +409,6 @@ const collectionsData = {
             }
         ]
     },
-    wild: {
-        title: 'Style & Wildness',
-        tags: 'Menswear',
-        description: 'The main inspirations are the abstract and geometric patterns of Persian carpets and clothing as cultural references, paired with asymmetric forms found in nature. The outfit combines an asymmetric jumpsuit and a half-coat crafted from a special fabric patterned with Persian carpet motifs. Colors draw from the traditional carpet palette, accented with green drawn from the natural world.',
-        outfits: [
-            {
-                image: 'images/wild-outfit1.jpg',
-                alt: 'Style & Wildness, 2019',
-                title: '',
-                meta: 'Persian Carpet-patterned Fabric',
-                description: 'Asymmetric jumpsuit and half-coat woven from fabric bearing Persian carpet motifs — culture worn on the body.'
-            }
-        ]
-    },
     super: {
         title: 'Supernormal',
         tags: 'Womenswear',
