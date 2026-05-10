@@ -201,10 +201,30 @@ button:focus {
     margin: 0 auto;
 }
 
+.intro-name-wrapper {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+}
+
 .intro-name {
-    font-weight: 700;
-    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-body);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
     color: var(--color-text-primary);
+}
+
+.intro-name-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    text-align: right;
+    margin: 0;
+    padding-right: 1rem;
+    margin-top: 0.25rem;
 }
 
 .intro-tagline {
