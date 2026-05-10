@@ -6,7 +6,7 @@ const collectionsData = {
     survival: {
         title: 'Multi-Functional Survival System',
         tags: 'Technical Outerwear · Genderless',
-        description: 'An adaptive survival jacket developed for changing environmental conditions. The design allows transformation into a vest, incorporates an oxygen-carrying system, and protects the wearer from harsh elements such as wind and sand. A balance between technical function and wearable design — where innovation meets necessity.',
+        description: 'An adaptive survival jacket developed for changing environmental conditions. The design transforms into a vest, incorporates an oxygen-carrying system, and protects from harsh elements like wind and sand. Technical function meets wearable design.',
         outfits: [
             { image: 'images/fear-outfit6-a.jpg', alt: 'Multi-Functional Survival System, 2025' },
             { image: 'images/fear-outfit6-b.jpg', alt: 'Multi-Functional Survival System, 2025' },
@@ -21,46 +21,90 @@ const collectionsData = {
     fear: {
         title: 'Fear Into Freedom',
         tags: 'Genderless · Womenswear',
-        description: 'A wearable manifesto against fear. The feeling of fear opposes freedom — the greater the fear, the further one is from personal liberty. Inspired by the people\'s courage in fighting for their rights across the world, this collection visualizes fear and translates it into textile. The color palette — pink, green, and grey — speaks to protest, hope, and exhaustion. Both feminine and unisex, the collection dismantles false gender stereotypes as it dismantles fear itself.',
-        outfits: [
-            { image: 'images/fear-outfit1-a.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit1-b.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit1-c.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit1-d.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit1-e.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit1-f.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit2-a.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit2-b.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit2-c.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit2-d.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit2-e.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit3-a.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit3-b.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit3-c.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit4-a.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit4-b.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit4-c.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit5-a.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit5-b.jpg', alt: 'Fear Into Freedom, 2023' },
-            { image: 'images/fear-outfit5-c.jpg', alt: 'Fear Into Freedom, 2023' }
+        description: 'A wearable manifesto against fear. The feeling of fear opposes freedom: the greater the fear, the further one is from personal liberty. Inspired by people fighting for their rights across the world, this collection visualizes fear in textile. Pink, green, and grey speak to protest, hope, and exhaustion. Both feminine and unisex, dismantling false gender stereotypes alongside fear itself.',
+        hasSubOutfits: true,
+        subOutfits: [
+            {
+                title: 'Outfit 1',
+                heroImage: 'images/fear-outfit1-a.jpg',
+                images: [
+                    { image: 'images/fear-outfit1-a.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
+                    { image: 'images/fear-outfit1-b.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
+                    { image: 'images/fear-outfit1-c.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
+                    { image: 'images/fear-outfit1-d.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' }
+                ]
+            },
+            {
+                title: 'Outfit 2',
+                heroImage: 'images/fear-outfit2-a.jpg',
+                images: [
+                    { image: 'images/fear-outfit2-a.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
+                    { image: 'images/fear-outfit2-b.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
+                    { image: 'images/fear-outfit2-c.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
+                    { image: 'images/fear-outfit2-d.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
+                    { image: 'images/fear-outfit2-e.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' }
+                ]
+            },
+            {
+                title: 'Outfit 3',
+                heroImage: 'images/fear-outfit3-a.jpg',
+                images: [
+                    { image: 'images/fear-outfit3-a.jpg', alt: 'Fear Into Freedom - Outfit 3, 2023' },
+                    { image: 'images/fear-outfit3-b.jpg', alt: 'Fear Into Freedom - Outfit 3, 2023' },
+                    { image: 'images/fear-outfit3-c.jpg', alt: 'Fear Into Freedom - Outfit 3, 2023' },
+                    { image: 'images/fear-outfit3-d.jpg', alt: 'Fear Into Freedom - Outfit 3, 2023' },
+                    { image: 'images/fear-outfit3-e.jpg', alt: 'Fear Into Freedom - Outfit 3, 2023' }
+                ]
+            },
+            {
+                title: 'Outfit 4',
+                heroImage: 'images/fear-outfit4-a.jpg',
+                images: [
+                    { image: 'images/fear-outfit4-a.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
+                    { image: 'images/fear-outfit4-b.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
+                    { image: 'images/fear-outfit4-c.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' }
+                ]
+            },
+            {
+                title: 'Outfit 5',
+                heroImage: 'images/fear-outfit5-a.jpg',
+                images: [
+                    { image: 'images/fear-outfit5-a.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' },
+                    { image: 'images/fear-outfit5-b.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' },
+                    { image: 'images/fear-outfit5-c.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' }
+                ]
+            }
         ]
     },
     worlds: {
         title: 'Between Worlds',
         tags: 'Sportswear · Menswear · Genderless',
-        description: 'A study in contrast, asymmetric forms and shifting grey tones inspired by the natural landscapes of Iran, where opposites meet in quiet harmony. The concept references the contrast that exists everywhere — between social levels, genders, in nature, and in different thoughts. Asymmetry of form and a harmonic combination of light and dark shades give shape to this duality.',
-        outfits: [
-            { image: 'images/worlds-outfit1-a.jpg', alt: 'Between Worlds, 2022' },
-            { image: 'images/worlds-outfit1-b.jpg', alt: 'Between Worlds, 2022' },
-            { image: 'images/worlds-outfit1-c.jpg', alt: 'Between Worlds, 2022' },
-            { image: 'images/worlds-outfit1-d.jpg', alt: 'Between Worlds, 2022' },
-            { image: 'images/worlds-outfit1-e.jpg', alt: 'Between Worlds, 2022' }
+        description: 'A study in contrast. Asymmetric forms and shifting grey tones inspired by Iran\'s natural landscapes, opposites meeting in quiet harmony. The concept references contrast everywhere: between social levels, genders, in nature, in thought. Asymmetry of form, harmonies of light and dark shades.',
+        hasSubOutfits: true,
+        subOutfits: [
+            {
+                title: 'Outfit 1',
+                heroImage: 'images/worlds-outfit1-a.jpg',
+                images: [
+                    { image: 'images/worlds-outfit1-a.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
+                    { image: 'images/worlds-outfit1-b.jpg', alt: 'Between Worlds - Outfit 1, 2022' }
+                ]
+            },
+            {
+                title: 'Outfit 2',
+                heroImage: 'images/worlds-outfit2-a.jpg',
+                images: [
+                    { image: 'images/worlds-outfit2-a.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-b.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-c.jpg', alt: 'Between Worlds - Outfit 2, 2022' }
+                ]
+            }
         ]
     },
     people: {
         title: 'People',
         tags: 'Creative Identity · Womenswear',
-        description: 'A celebration of faces, gazes, and races — this collection brings human emotion to life on fabric, showing that despite our differences, love is always possible. Faces are rendered through embroidery and metal earring details, turning each piece into a wearable portrait. Crafted in self-patterned cotton and two-layered cotton-filled self-patterned jersey.',
+        description: 'A celebration of faces, gazes, and races. This collection brings human emotion to life on fabric. Despite our differences, love is always possible. Faces rendered through embroidery and metal earring details turn each piece into a wearable portrait. Self-patterned cotton and two-layered cotton-filled self-patterned jersey.',
         hasSubOutfits: true,
         subOutfits: [
             {
@@ -94,7 +138,7 @@ const collectionsData = {
     love: {
         title: 'Inherited Warmth',
         tags: 'Sustainability · Upcycling · Womenswear',
-        description: 'An upcycled transformation of a mother\'s trench coat, developed during the isolation of the COVID-19 pandemic. Reconstructed into a two-piece suit with a front fastening system, the design reconfigures an existing garment while preserving its emotional resonance. Through deconstruction and reassembly, sustainability is approached as both material practice and narrative—where clothing retains intimacy, history, and connection across distance.',
+        description: 'An upcycled transformation of a mother\'s trench coat, developed during COVID-19 isolation. Reconstructed into a two-piece suit with front fastening, reconfiguring an existing garment while preserving its emotional resonance. Through deconstruction and reassembly, sustainability becomes material practice and narrative. Clothing retains intimacy, history, and connection across distance.',
         outfits: [
             { image: 'images/warmth-outfit1-a.jpg', alt: 'Inherited Warmth, 2020' },
             { image: 'images/warmth-outfit1-b.jpg', alt: 'Inherited Warmth, 2020' },
@@ -108,7 +152,7 @@ const collectionsData = {
     sacred: {
         title: 'Sacred Asymmetry',
         tags: 'Womenswear',
-        description: 'An exploration of ritual, protection, and cultural memory through asymmetric form. Traditional ornamental references are reinterpreted into a contemporary silhouette, where geometric textile patterns meet raw, instinctive construction. The face covering acts as both concealment and identity — a symbolic object balancing mystery, protection, and presence. Contrasts between structure and wildness create a garment suspended between heritage and modernity.',
+        description: 'Ritual, protection, and cultural memory through asymmetric form. Traditional ornamental references reinterpreted into contemporary silhouette. Geometric textile patterns meet raw, instinctive construction. The face covering: concealment and identity in one, balancing mystery, protection, presence. Structure and wildness, heritage and modernity.',
         outfits: [
             { image: 'images/sacred-outfit1-a.jpg', alt: 'Sacred Asymmetry, 2020' },
             { image: 'images/sacred-outfit1-b.jpg', alt: 'Sacred Asymmetry, 2020' },
@@ -123,7 +167,7 @@ const collectionsData = {
     cocoon: {
         title: 'Silent Cocoon',
         tags: 'Womenswear · Conceptual',
-        description: 'An exploration of protective volume and quiet intimacy. Soft, pleated structures wrap the body in a cocoon-like silhouette, balancing fragility with control. The exaggerated neckline acts as a gentle barrier — a soft armor — creating a space of stillness and subtle isolation. Rendered in white, the design reduces form to its purest expression, where texture and volume speak louder than color.',
+        description: 'Protective volume and quiet intimacy. Soft, pleated structures wrap the body in a cocoon-like silhouette, balancing fragility with control. The exaggerated neckline: a gentle barrier, soft armor, creating stillness and subtle isolation. Rendered in white, form reduced to purest expression. Texture and volume speak louder than color.',
         outfits: [
             { image: 'images/cocoon-outfit1-a.jpg', alt: 'Silent Cocoon, 2019' },
             { image: 'images/cocoon-outfit1-b.jpg', alt: 'Silent Cocoon, 2019' },
