@@ -761,7 +761,7 @@ button:focus {
     color: var(--color-text-secondary);
     font-size: 1.1rem;
     margin-bottom: var(--spacing-xl);
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
