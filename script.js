@@ -187,7 +187,6 @@ const collectionsData = {
 
 const collectionModal = document.getElementById('collection-modal');
 const collectionModalTitle = document.getElementById('collection-modal-title');
-const collectionModalTags = document.getElementById('collection-modal-tags');
 const collectionModalDescription = document.getElementById('collection-modal-description');
 const collectionModalGallery = document.getElementById('collection-modal-gallery');
 const collectionModalClose = document.querySelector('.collection-modal-close');
@@ -220,7 +219,6 @@ function openCollectionModal(collectionId) {
     
     // Set modal header
     collectionModalTitle.textContent = collection.title;
-    collectionModalTags.textContent = collection.tags;
     collectionModalDescription.textContent = collection.description;
     
     // Clear and populate gallery
