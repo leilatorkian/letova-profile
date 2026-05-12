@@ -31,7 +31,10 @@ const collectionsData = {
                     { image: 'images/fear-outfit1-a.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
                     { image: 'images/fear-outfit1-b.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
                     { image: 'images/fear-outfit1-c.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
-                    { image: 'images/fear-outfit1-d.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' }
+                    { image: 'images/fear-outfit1-d.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
+                    { image: 'images/fear-outfit1-e.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
+                    { image: 'images/fear-outfit1-f.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' },
+                    { image: 'images/fear-outfit1-g.jpg', alt: 'Fear Into Freedom - Outfit 1, 2023' }
                 ]
             },
             {
@@ -62,7 +65,11 @@ const collectionsData = {
                 images: [
                     { image: 'images/fear-outfit4-a.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
                     { image: 'images/fear-outfit4-b.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
-                    { image: 'images/fear-outfit4-c.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' }
+                    { image: 'images/fear-outfit4-c.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
+                    { image: 'images/fear-outfit4-d.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
+                    { image: 'images/fear-outfit4-e.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
+                    { image: 'images/fear-outfit4-f.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' },
+                    { image: 'images/fear-outfit4-g.jpg', alt: 'Fear Into Freedom - Outfit 4, 2023' }
                 ]
             },
             {
@@ -71,7 +78,10 @@ const collectionsData = {
                 images: [
                     { image: 'images/fear-outfit5-a.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' },
                     { image: 'images/fear-outfit5-b.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' },
-                    { image: 'images/fear-outfit5-c.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' }
+                    { image: 'images/fear-outfit5-c.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' },
+                    { image: 'images/fear-outfit5-d.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' },
+                    { image: 'images/fear-outfit5-e.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' },
+                    { image: 'images/fear-outfit5-f.jpg', alt: 'Fear Into Freedom - Outfit 5, 2023' }
                 ]
             }
         ]
@@ -87,7 +97,12 @@ const collectionsData = {
                 heroImage: 'images/worlds-outfit1-a.jpg',
                 images: [
                     { image: 'images/worlds-outfit1-a.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
-                    { image: 'images/worlds-outfit1-b.jpg', alt: 'Between Worlds - Outfit 1, 2022' }
+                    { image: 'images/worlds-outfit1-b.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
+                    { image: 'images/worlds-outfit1-c.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
+                    { image: 'images/worlds-outfit1-d.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
+                    { image: 'images/worlds-outfit1-e.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
+                    { image: 'images/worlds-outfit1-f.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
+                    { image: 'images/worlds-outfit1-g.jpg', alt: 'Between Worlds - Outfit 1, 2022' }
                 ]
             },
             {
@@ -96,7 +111,13 @@ const collectionsData = {
                 images: [
                     { image: 'images/worlds-outfit2-a.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
                     { image: 'images/worlds-outfit2-b.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
-                    { image: 'images/worlds-outfit2-c.jpg', alt: 'Between Worlds - Outfit 2, 2022' }
+                    { image: 'images/worlds-outfit2-c.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-d.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-e.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-f.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-g.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-h.jpg', alt: 'Between Worlds - Outfit 2, 2022' },
+                    { image: 'images/worlds-outfit2-i.jpg', alt: 'Between Worlds - Outfit 2, 2022' }
                 ]
             }
         ]
