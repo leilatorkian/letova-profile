@@ -45,7 +45,9 @@ const collectionsData = {
                     { image: 'images/fear-outfit2-b.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
                     { image: 'images/fear-outfit2-c.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
                     { image: 'images/fear-outfit2-d.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
-                    { image: 'images/fear-outfit2-e.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' }
+                    { image: 'images/fear-outfit2-e.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
+                    { image: 'images/fear-outfit2-f.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
+                    { image: 'images/fear-outfit2-g.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' }
                 ]
             },
             {
