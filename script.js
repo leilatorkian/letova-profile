@@ -48,6 +48,11 @@ const collectionsData = {
                     { image: 'images/fear-outfit2-e.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
                     { image: 'images/fear-outfit2-f.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' },
                     { image: 'images/fear-outfit2-g.jpg', alt: 'Fear Into Freedom - Outfit 2, 2023' }
+                ],
+                technicalDrawings: [
+                    { image: 'images/fear-outfit2-tech-a.jpg', alt: 'Fear Into Freedom - Outfit 2 Technical Drawing 1, 2023' },
+                    { image: 'images/fear-outfit2-tech-b.jpg', alt: 'Fear Into Freedom - Outfit 2 Technical Drawing 2, 2023' },
+                    { image: 'images/fear-outfit2-tech-c.jpg', alt: 'Fear Into Freedom - Outfit 2 Technical Drawing 3, 2023' }
                 ]
             },
             {
@@ -105,6 +110,9 @@ const collectionsData = {
                     { image: 'images/worlds-outfit1-e.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
                     { image: 'images/worlds-outfit1-f.jpg', alt: 'Between Worlds - Outfit 1, 2022' },
                     { image: 'images/worlds-outfit1-g.jpg', alt: 'Between Worlds - Outfit 1, 2022' }
+                ],
+                technicalDrawings: [
+                    { image: 'images/worlds-outfit1-tech-a.jpg', alt: 'Between Worlds - Outfit 1 Technical Drawing, 2022' }
                 ]
             },
             {
@@ -240,6 +248,12 @@ function openCollectionModal(collectionId) {
     currentOutfitIndex = 0;
     currentSubOutfitIndex = null;
     
+    // Hide toggle buttons when viewing collection overview
+    const toggleContainer = document.getElementById('view-toggle-container');
+    if (toggleContainer) {
+        toggleContainer.style.display = 'none';
+    }
+    
     // Set modal header
     collectionModalTitle.textContent = collection.title;
     collectionModalDescription.textContent = collection.description;
@@ -333,13 +347,47 @@ function openCollectionModal(collectionId) {
 }
 
 // Open Sub-Outfit Gallery (for collections with nested outfits)
-function openSubOutfitGallery(collectionId, subOutfitIndex) {
+function openSubOutfitGallery(collectionId, subOutfitIndex, view = 'photos') {
     const collection = collectionsData[collectionId];
     
     if (!collection || !collection.subOutfits || !collection.subOutfits[subOutfitIndex]) return;
     
     currentSubOutfitIndex = subOutfitIndex;
     const subOutfit = collection.subOutfits[subOutfitIndex];
+    
+    // Check if this outfit has technical drawings
+    const hasTechnicalDrawings = subOutfit.technicalDrawings && subOutfit.technicalDrawings.length > 0;
+    
+    // Show/hide toggle buttons
+    const toggleContainer = document.getElementById('view-toggle-container');
+    if (hasTechnicalDrawings) {
+        toggleContainer.style.display = 'flex';
+        
+        // Set up toggle button listeners
+        const togglePhotos = document.getElementById('toggle-photos');
+        const toggleTechnical = document.getElementById('toggle-technical');
+        
+        // Remove existing listeners
+        const newTogglePhotos = togglePhotos.cloneNode(true);
+        const newToggleTechnical = toggleTechnical.cloneNode(true);
+        togglePhotos.parentNode.replaceChild(newTogglePhotos, togglePhotos);
+        toggleTechnical.parentNode.replaceChild(newToggleTechnical, toggleTechnical);
+        
+        // Add new listeners
+        newTogglePhotos.addEventListener('click', () => {
+            openSubOutfitGallery(collectionId, subOutfitIndex, 'photos');
+        });
+        
+        newToggleTechnical.addEventListener('click', () => {
+            openSubOutfitGallery(collectionId, subOutfitIndex, 'technical');
+        });
+        
+        // Update active state
+        newTogglePhotos.classList.toggle('active', view === 'photos');
+        newToggleTechnical.classList.toggle('active', view === 'technical');
+    } else {
+        toggleContainer.style.display = 'none';
+    }
     
     // Clear and repopulate gallery with sub-outfit images
     collectionModalGallery.innerHTML = '';
@@ -354,8 +402,13 @@ function openSubOutfitGallery(collectionId, subOutfitIndex) {
     });
     collectionModalGallery.appendChild(backButton);
     
+    // Determine which images to show based on view
+    const imagesToShow = view === 'technical' && subOutfit.technicalDrawings 
+        ? subOutfit.technicalDrawings 
+        : subOutfit.images;
+    
     // Show all images for this sub-outfit
-    subOutfit.images.forEach((imageData, index) => {
+    imagesToShow.forEach((imageData, index) => {
         const outfitCard = document.createElement('article');
         outfitCard.className = 'modal-outfit-card';
         outfitCard.dataset.outfitIndex = index;
@@ -372,7 +425,7 @@ function openSubOutfitGallery(collectionId, subOutfitIndex) {
         // Add click handler to open outfit detail modal
         outfitCard.addEventListener('click', (e) => {
             e.stopPropagation();
-            openSubOutfitImageModal(collectionId, subOutfitIndex, index);
+            openSubOutfitImageModal(collectionId, subOutfitIndex, index, view);
         });
         
         // Keyboard accessibility
@@ -382,7 +435,7 @@ function openSubOutfitGallery(collectionId, subOutfitIndex) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 e.stopPropagation();
-                openSubOutfitImageModal(collectionId, subOutfitIndex, index);
+                openSubOutfitImageModal(collectionId, subOutfitIndex, index, view);
             }
         });
         
@@ -391,13 +444,17 @@ function openSubOutfitGallery(collectionId, subOutfitIndex) {
 }
 
 // Open individual image from sub-outfit
-function openSubOutfitImageModal(collectionId, subOutfitIndex, imageIndex) {
+function openSubOutfitImageModal(collectionId, subOutfitIndex, imageIndex, view = 'photos') {
     const collection = collectionsData[collectionId];
     
     if (!collection || !collection.subOutfits || !collection.subOutfits[subOutfitIndex]) return;
     
     const subOutfit = collection.subOutfits[subOutfitIndex];
-    const images = subOutfit.images;
+    
+    // Determine which images to use based on view
+    const images = view === 'technical' && subOutfit.technicalDrawings 
+        ? subOutfit.technicalDrawings 
+        : subOutfit.images;
     
     if (!images[imageIndex]) return;
     
@@ -418,18 +475,22 @@ function openSubOutfitImageModal(collectionId, subOutfitIndex, imageIndex) {
     updateNavButtonsForSubOutfit(images.length);
     
     // Override navigation to work within sub-outfit
-    outfitNavPrev.onclick = () => navigateSubOutfitImage(collectionId, subOutfitIndex, -1);
-    outfitNavNext.onclick = () => navigateSubOutfitImage(collectionId, subOutfitIndex, 1);
+    outfitNavPrev.onclick = () => navigateSubOutfitImage(collectionId, subOutfitIndex, -1, view);
+    outfitNavNext.onclick = () => navigateSubOutfitImage(collectionId, subOutfitIndex, 1, view);
     
     // Show modal
     outfitModal.showModal();
 }
 
 // Navigate within sub-outfit images
-function navigateSubOutfitImage(collectionId, subOutfitIndex, direction) {
+function navigateSubOutfitImage(collectionId, subOutfitIndex, direction, view = 'photos') {
     const collection = collectionsData[collectionId];
     const subOutfit = collection.subOutfits[subOutfitIndex];
-    const images = subOutfit.images;
+    
+    // Determine which images to use based on view
+    const images = view === 'technical' && subOutfit.technicalDrawings 
+        ? subOutfit.technicalDrawings 
+        : subOutfit.images;
     
     currentOutfitIndex += direction;
     
@@ -439,7 +500,7 @@ function navigateSubOutfitImage(collectionId, subOutfitIndex, direction) {
         currentOutfitIndex = 0;
     }
     
-    openSubOutfitImageModal(collectionId, subOutfitIndex, currentOutfitIndex);
+    openSubOutfitImageModal(collectionId, subOutfitIndex, currentOutfitIndex, view);
 }
 
 // Update navigation buttons for sub-outfit
