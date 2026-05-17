@@ -148,9 +148,44 @@ Material: Wool-Blend Fabric
                     { image: 'images/fear-outfit3-e.jpg', alt: 'Fear Into Freedom - Outfit 3, 2023' }
                 ],
                 technicalDrawings: [
-                    { image: 'images/fear-outfit3-tech-a.jpg', alt: 'Fear Into Freedom - Outfit 3 Technical Drawing 1, 2023' },
-                    { image: 'images/fear-outfit3-tech-b.jpg', alt: 'Fear Into Freedom - Outfit 3 Technical Drawing 2, 2023' },
-                    { image: 'images/fear-outfit3-tech-c.jpg', alt: 'Fear Into Freedom - Outfit 3 Technical Drawing 3, 2023' }
+                    { 
+                        image: 'images/fear-outfit3-tech-a.jpg', 
+                        alt: 'Fear Into Freedom - Outfit 3 Technical Drawing 1, 2023',
+                        specifications: `FULL-BODY BANDAGE
+Reflective fabric with Persian handwritten script
+
+— Full-length bandage construction in reflective material
+— Surface covered entirely in Persian handwritten text, applied by hand
+— Spiralling wrap silhouette suggesting movement, memory and unravelling
+— Dual-panel construction — front and back views show continuous script narrative
+— Conceptual piece: the body as archive, text as second skin`
+                    },
+                    { 
+                        image: 'images/fear-outfit3-tech-b.jpg', 
+                        alt: 'Fear Into Freedom - Outfit 3 Technical Drawing 2, 2023',
+                        specifications: `TROUSERS
+Wool-blend fabric
+
+— High-waisted slim-fit silhouette
+— Structured waistband with front dart detail
+— Sculptural front panel with asymmetric curved seam construction
+— Concealed side zip closure
+— Concealed in-seam side pockets
+— Tapered ankle hem`
+                    },
+                    { 
+                        image: 'images/fear-outfit3-tech-c.jpg', 
+                        alt: 'Fear Into Freedom - Outfit 3 Technical Drawing 3, 2023',
+                        specifications: `CROPPED JACKET
+Synthetic fur fabric
+
+— Cropped voluminous silhouette with dramatic dropped shoulders
+— Exaggerated oversized sleeves with rounded hem
+— Open front — no closure
+— Sculptural three-dimensional sleeve construction with layered volume
+— Stand collar with open neckline
+— Front and back views show consistent volume and weight`
+                    }
                 ]
             },
             {
@@ -237,7 +272,37 @@ Wool-blend fabric with hand-embroidered mesh
                     { image: 'images/worlds-outfit1-g.jpg', alt: 'Between Worlds - Outfit 1, 2022' }
                 ],
                 technicalDrawings: [
-                    { image: 'images/worlds-outfit1-tech-a.jpg', alt: 'Between Worlds - Outfit 1 Technical Drawing, 2022' }
+                    { 
+                        image: 'images/worlds-outfit1-tech-a.jpg', 
+                        alt: 'Between Worlds - Outfit 1 Technical Drawing, 2022',
+                        specifications: `ASYMMETRIC JUMPSUIT
+Cotton & Wool fabric
+
+— Relaxed full-length silhouette
+— Crew neckline with concealed back zip closure
+— Set-in sleeves with ribbed cuff finish
+— Asymmetric colour-block construction — contrasting tonal panels on front and back
+— Oversized patch pocket on front hip
+— Dual-fabric panel construction visible from both sides
+
+COLLAR
+Wool & Printed Silk
+
+— Detachable stand collar
+— Structured wool base with draped silk overlay
+— Gathered and pleated silk panel
+— Worn as independent accessory piece
+
+ASYMMETRIC COAT
+Cashmere & Wool fabric
+
+— Longline open-front silhouette — no closure
+— Asymmetric colour-block shoulder panel in contrast fabric
+— Contrasting burgundy cuff lining detail
+— Wide structured cuffs with double buckle strap fastening
+— Side slit hem construction
+— Tonal contrast panel visible on back`
+                    }
                 ]
             },
             {
@@ -255,8 +320,42 @@ Wool-blend fabric with hand-embroidered mesh
                     { image: 'images/worlds-outfit2-i.jpg', alt: 'Between Worlds - Outfit 2, 2022' }
                 ],
                 technicalDrawings: [
-                    { image: 'images/worlds-outfit2-tech-a.jpg', alt: 'Between Worlds - Outfit 2 Technical Drawing 1, 2022' },
-                    { image: 'images/worlds-outfit2-tech-b.jpg', alt: 'Between Worlds - Outfit 2 Technical Drawing 2, 2022' }
+                    { 
+                        image: 'images/worlds-outfit2-tech-a.jpg', 
+                        alt: 'Between Worlds - Outfit 2 Technical Drawing 1, 2022',
+                        specifications: `SYMMETRIC TROUSERS
+Cotton fabric · Olive & White
+
+— High-waisted with wide structured olive waistband
+— Asymmetric balloon silhouette — exaggerated volume at hip and thigh
+— Concealed side panel with contrast insert
+— Back button closure at waistband
+— Side zip fastening
+— Cropped wide hem opening
+— Knitted ocher socks styled as part of the outfit`
+                    },
+                    { 
+                        image: 'images/worlds-outfit2-tech-b.jpg', 
+                        alt: 'Between Worlds - Outfit 2 Technical Drawing 2, 2022',
+                        specifications: `ASYMMETRIC HOODIE
+Cotton-blend fabric · Olive & White colour-block
+
+— Cropped asymmetric silhouette
+— Raglan sleeve construction in contrast olive fabric
+— Large integrated hood with front zip closure and adjustable toggle
+— Colour-block panelling — olive sleeves and hood, white body
+— Asymmetric curved hem
+— Ribbed cuff detail on sleeves
+
+VEST / HOOD
+Wool fabric · Charcoal & Light Grey
+
+— Structured bib-shaped vest construction
+— Asymmetric colour-block — charcoal and light grey panels
+— Tonal topstitching detail on front
+— Ribbed hem band
+— Wearable as standalone vest or hood accessory piece`
+                    }
                 ]
             }
         ]
